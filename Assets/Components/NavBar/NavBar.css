@@ -1,4 +1,12 @@
-/* #header {
-    overflow: hidden; // Hide scrollbars 
-  }
-   */
+#sweetLogo{
+  width:auto;
+  height: 150px;
+}
+span{
+width: 5vh;
+
+}
+.icons{
+  width:100%;
+  height: auto;
+}
