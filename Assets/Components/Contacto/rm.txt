@@ -1,4 +1,0 @@
-Bootstrap
-
-Generar un login con Bootstrap y con js validar si los datos que se ingresan 
-son correctos o no, verificando con un mensaje en un alert.!
