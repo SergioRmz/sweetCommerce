@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/styles/style.css">
-    <link rel="stylesheet" href="./NavBar.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./NavBar.css">
 
     <title>SweetCommerce</title>
 </head>
 <body>
     <section id="header"class="container" >
         <header class="row">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary col-sm-12 col-md-12 col-lg-12 col-xl-12
-            " >
-                <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary col-sm-12 col-md-12 col-lg-12 col-xl-12 row" >
+              <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                    <img src="/Assets/images/Sweet.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <img id="sweetLogo" src="/Assets/images/Sweet.png" alt="Logo" class="d-inline-block align-text-center">
                 Bootstrap
               </a>
 
-    
-              <form class="d-flex" role="search" data-bs-toggle="collapse" data-bs-target="#navIcons" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex " role="search" >
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success bg-info-subtle border-light-subtle text-info-emphasis" type="submit">Search</button>
               </form>
 
               
@@ -33,7 +32,28 @@
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#">
+                        <img class="img-fluid" src="/Assets/icons/icons8-usuario-masculino-en-círculo-48.png" alt="">
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">
                         <img class="img-fluid" src="/Assets/icons/icons8-me-gusta-48.png" alt="">
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">
+                        <img src="/Assets/icons/icons8-carrito-de-la-compra-cargado-48.png" alt=""></a>
+                    </li>
+                  </ul>
+              </div>
+              </div>
+
+<!--               
+              <div class="container">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">
+                        <img id="sweetogo"class="img-fluid" src="/Assets/icons/icons8-me-gusta-48.png" alt="">
                       </a>
                     </li>
                     <li class="nav-item">
@@ -51,14 +71,30 @@
                         <img src="/Assets/icons/icons8-me-gusta-48.png" alt=""></a>
                     </li>
                   </ul>
-              </div>
+              </div> -->
+              <div></div>
+      
+                    <a class="nav-link navbar-toggler  border border-0" href="#"  type="link" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span><img  class=" icons" src="/Assets/icons/icons8-me-gusta-48.png" alt=""></span>                     
+                    </a>
 
-        
-                   
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="nav-link navbar-toggler border border-0" href="#"  type="link" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <img  class=" icons" src="/Assets/icons/icons8-usuario-masculino-en-círculo-48.png" alt="">
+                    </a>
+                    <a class="nav-link navbar-toggler border border-0 " href="#"  type="link" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <img  class=" icons" src="/Assets/icons/icons8-me-gusta-48.png" alt="">
+                    </a>
+                    <a class="nav-link navbar-toggler border border-0" href="#"  type="link" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <img  class=" icons" src="/Assets/icons/icons8-carrito-de-la-compra-cargado-48.png" alt="">
+                    </a>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">                   
                     <span class="navbar-toggler-icon"></span>
                   </button>
+
                 </div>
+                
+                </nav>
         </header>
 
         <nav class="row navbar navbar-expand-lg bg-body-tertiary" >
@@ -147,11 +183,11 @@
 
 
 
-    <!-- 
+
 
     <nav class="navbar bg-body-tertiary">
 
-        <div class="container-fluid"> -->
+        <div class="container-fluid"> 
 
 
         </div>
