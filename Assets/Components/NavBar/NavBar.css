@@ -1,27 +1,40 @@
+#navBar-partOne-item, #navBar-partOne{
+  background-color: #E8DAEF;
+  padding-bottom: 0;
+}
+#navBar-partTwo-item, #navBar-partTwo{
+  background-color: #590696;
+  padding-top: 0;
+  color: #ffff;
+}
+.nav-link, #nav-link-dulce, #nav-link-chocolate, #nav-link-bebidas, #nav-link-snacks,#nav-link-cajasMisteriosas{
+  color: #ffff;
+}
+
 #sweetLogo{
   width:auto;
   height: 150px;
 }
+@media (max-width: 992px)  {
+  .collapseItem{
+  visibility: collapse;
+}
+#sweetLogo{
+  height: 27vw;
+}
+}
+
 
 .icons{
   width:100%;
   height: auto;
 }
-#iconUser{
-  width: 4vw;
+#iconSearch, #iconUser,#iconMeEncanta,#iconCarrito,#iconCarrito{
+  width: 9vw;
+  padding-right: 1vw;
 }
-#iconMeEncanta{
-  width: 4vw;
 
-}
-#iconCarrito{
-  width: 4vw;
 
-}
-#iconSearch {
-  width: 4vw;
-
-}
 
 
 
