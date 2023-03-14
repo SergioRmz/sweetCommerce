@@ -2,264 +2,219 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../NavBar/NavBar.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="../NavBar/NavBar.css">
 </head>
 
 <body>
-  <section id="header"class="container" >
-    <header class="row">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary col-sm-12 col-md-12 col-lg-12 col-xl-12 row" >
-          <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                <img id="sweetLogo" src="/Assets/images/Sweet.png" alt="Logo" class="d-inline-block align-text-center">
-          
+  <!-- Navbar se divide en 2 secciones parte 1 y parte 2 -->
+  <section id="sectionContainer" class="container">
+    <header class="" id="header">
+      <nav id="navBar-partOne" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div id="navBar-partOne-item" class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img id="sweetLogo" src="/Assets/images/Sweet.png" alt="Logo" class="d-inline-block align-text-center">
+
           </a>
 
           <div class="collapse navbar-collapse" id="navbarNav">
-            <form class="d-flex " role="search" >
+            <form class="d-flex " role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success bg-info-subtle border-light-subtle text-info-emphasis" type="submit">Search</button>
-          </form>
+              <button class="btn btn-outline-success bg-info-subtle border-light-subtle text-info-emphasis"
+                type="submit">Search</button>
+            </form>
 
-          
-          <div class="container">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
-                    <img  class="img-fluid" src="/Assets/icons/icons8-usuario-masculino-en-círculo-48.png" alt="">
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#">
-                    <img  class="img-fluid" src="/Assets/icons/icons8-me-gusta-48.png" alt="">
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">
-                    <img  src="/Assets/icons/icons8-carrito-de-la-compra-cargado-48.png" alt=""></a>
-                </li>
-              </ul>
-          </div>
-          </div>
 
-<!--               
-          <div class="container">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
+            <div class="container">
+              <ul class="nav justify-content-end">
+                <li class="nav-item collapseItem">
                   <a class="nav-link active" aria-current="page" href="#">
-                    <img id="sweetogo"class="img-fluid" src="/Assets/icons/icons8-me-gusta-48.png" alt="">
+                    <img class="img-fluid" src="/Assets/icons/icons8-usuario-masculino-en-círculo-48.png" alt="">
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item collapseItem">
                   <a class="nav-link " href="#">
                     <img class="img-fluid" src="/Assets/icons/icons8-me-gusta-48.png" alt="">
                   </a>
                 </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#">
-                    <img class="img-fluid" src="/Assets/icons/icons8-me-gusta-48.png" alt="">
-                  </a>
-                </li>
-                <li class="nav-item">
+                <li class="nav-item collapseItem">
                   <a class="nav-link disabled">
-                    <img src="/Assets/icons/icons8-me-gusta-48.png" alt=""></a>
+                    <img src="/Assets/icons/icons8-carrito-de-la-compra-cargado-48.png" alt=""></a>
                 </li>
               </ul>
-          </div> -->
-          <div></div>
-  
-                <a class="nav-link navbar-toggler  border border-0 p-0" href="#"  type="link" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span><img  id="iconSearch" class=" icons" src="/Assets/icons/icons8-busca-mas-48.png" alt=""></span>                     
-                </a>
-
-                <a class="nav-link navbar-toggler border border-0 p-0" href="#"  type="link" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <img id="iconUser" class=" icons" src="/Assets/icons/icons8-usuario-masculino-en-círculo-48.png" alt="">
-                </a>
-                <a class="nav-link navbar-toggler border border-0 p-0" href="#"  type="link" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <img id="iconMeEncanta" class=" icons" src="/Assets/icons/icons8-me-gusta-48.png" alt="">
-                </a>
-                <a class="nav-link navbar-toggler border border-0 p-0" href="#"  type="link" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <img id="iconCarrito" class=" icons" src="/Assets/icons/icons8-carrito-de-la-compra-cargado-48.png" alt="">
-                </a>
-
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">                   
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
             </div>
-            
-            </nav>
+          </div>
+
+
+          <a class="nav-link navbar-toggler  border border-0 p-0" href="#" type="link" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img id="iconSearch" class=" icons" src="/Assets/icons/icons8-busca-mas-48.png" alt=""></span>
+          </a>
+
+          <a class="nav-link navbar-toggler border border-0 p-0" href="#" type="link" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img id="iconUser" class=" icons" src="/Assets/icons/icons8-usuario-masculino-en-círculo-48.png" alt="">
+          </a>
+          <a class="nav-link navbar-toggler border border-0 p-0" href="#" type="link" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img id="iconMeEncanta" class=" icons" src="/Assets/icons/icons8-me-gusta-48.png" alt="">
+          </a>
+          <a class="nav-link navbar-toggler border border-0 p-0" href="#" type="link" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img id="iconCarrito" class=" icons" src="/Assets/icons/icons8-carrito-de-la-compra-cargado-48.png" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        </div>
+
+      </nav>
+
+      <nav id="navBar-partTwo" class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div id="navBar-partTwo-item" class="container-fluid ">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Dulces</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Chocolate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Bebidas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Snacks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Caja Misteriosa</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
     </header>
+  </section>
 
-    <nav class="row navbar navbar-expand-lg bg-body-tertiary" >
-        <div class="container-fluid col-sm-12 col-md-12 col-lg-12 col-xl-12
-        ">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-              </div>
-    </nav>
- </section>
-    <!-- CARRUSEL -->
-    <div class="container">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/Assets/images/Welcome.png" class="d-block w-100" alt="Bienvenidos">
-                </div>
-                <div class="carousel-item">
-                    <img src="/Assets/images/Welcome1.png" class="d-block w-100" alt="Sobre Nosotros">
-                </div>
-                <div class="carousel-item">
-                    <img src="/Assets/images/Welcome2.png" class="d-block w-100" alt="Imagen 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="/Assets/images/Welcome3.png" class="d-block w-100" alt="Imagen 4">
-                </div>
-            </div>
-        </div>
+  <!-- Video -->
+  <div class="container">
+    <div class="ratio ratio-16x9">
+      <video src="/Assets/images/Sweetcommerce.mp4" class="object-fit-contain" autoplay></video>
     </div>
-    <br><br><br><br>
-    <h1 class="container text-center">Acerca de nosotros</h1>
-    <br><br>
+  </div>
 
-    <!--CARTAS-->
-    <div class="container">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    1 of 3
-                    <div class="card" style="width: 18rem;">
-                        <img src="/Assets/images/user.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Daniela Maciel Gomez</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <div class="card-footer">
-                                <small class="text-muted">
-                                    <a href="#" class="card-link"><img src="/Assets/icons/icons8-github-28.png" alt=""></a>
-                                    <a href="#" class="card-link"><img src="/Assets/icons/icons8-linkedin-48.png" alt="" width="15%"></a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    2 of 3
-                    <div class="card" style="width: 18rem;">
-                        <img src="/Assets/images/user.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Sergio Valentino Gil</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <div class="card-footer">
-                                <small class="text-muted">
-                                    <a href="#" class="card-link"><img src="/Assets/icons/icons8-github-28.png" alt=""></a>
-                                    <a href="#" class="card-link"><img src="/Assets/icons/icons8-linkedin-48.png" alt="" width="15%"></a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    3 of 3
-                    <div class="card" style="width: 18rem;">
-                        <img src="/Assets/images/user.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Sergio Ramirez</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <div class="card-footer">
-                                <small class="text-muted">
-                                    <a href="#" class="card-link"><img src="/Assets/icons/icons8-github-28.png" alt=""></a>
-                                    <a href="#" class="card-link"><img src="/Assets/icons/icons8-linkedin-48.png" alt="" width="15%"></a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br><br>
-            <div class="row">
-                <div class="col">
-                    1 of 3
-                    <div class="card" style="width: 18rem;">
-                        <img src="/Assets/images/user.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Emmanuel Morantes</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <div class="card-footer">
-                                <small class="text-muted">
-                                    <a href="#" class="card-link"><img src="/Assets/icons/icons8-github-28.png" alt=""></a>
-                                    <a href="#" class="card-link"><img src="/Assets/icons/icons8-linkedin-48.png" alt="" width="15%"></a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    2 of 3
-                    <div class="card" style="width: 18rem;">
-                        <img src="/Assets/images/user.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Alain Vazquez</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <div class="card-footer">
-                                <small class="text-muted">
-                                    <a href="#" class="card-link"><img src="/Assets/icons/icons8-github-28.png" alt=""></a>
-                                    <a href="#" class="card-link"><img src="/Assets/icons/icons8-linkedin-48.png" alt="" width="15%"></a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    3 of 3
-                    <div class="card" style="width: 18rem;">
-                        <img src="/Assets/images/user.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Karen Medina Silva</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <div class="card-footer">
-                                <small class="text-muted">
-                                    <a href="https://github.com/MedinaSilva" target="_blank" class="card-link"><img src="/Assets/icons/icons8-github-28.png" alt=""></a>
-                                    <a href="https://www.linkedin.com/in/karen-medina-silva-/" target="_blank" class="card-link"><img src="/Assets/icons/icons8-linkedin-48.png" alt="" width="15%"></a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <br><br>
+
+  <!--CARTAS-->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col-lg-4">
+        <div class="card h-100">
+          <img src="/Assets/images/Avatares/SVGM.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sergio Valentino Gil Molina</h5>
+            <p class="card-text">Ingeniero y desarrollador Java Full-Stack apasionado por la ciberseguridad. En mi
+              tiempo libre, disfruto tocando la guitarra y jugando videojuegos. Además, me encantan los dulces picantes.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">
+              <a href="https://github.com/ValescoDev" target="_blank" class="card-link"><img
+                  src="/Assets/icons/icons8-github-28.png" alt=""></a>
+              <a href="https://www.linkedin.com/in/gilmolsv" target="_blank" class="card-link"><img
+                  src="/Assets/icons/icons8-linkedin-48.png" alt="" width="30px"></a>
+            </small>
+          </div>
         </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card h-100">
+          <img src="/Assets/images/Avatares/KMS.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Karen Medina Silva</h5>
+            <p class="card-text">Desarrolladora Java Full-Stack e ingeniera geofísica apasionada por el trabajo de campo
+              y en búsqueda de aprender TI para aplicar en el área de ciencias de la tierra.Mis dulces favoritos son los
+              picositos.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">
+              <a href="https://github.com/MedinaSilva" target="_blank" class="card-link"><img
+                  src="/Assets/icons/icons8-github-28.png" alt=""></a>
+              <a href="https://www.linkedin.com/in/karen-medina-silva-/" target="_blank" class="card-link"><img
+                  src="/Assets/icons/icons8-linkedin-48.png" alt="" width="30px"></a>
+            </small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card h-100">
+          <img src="/Assets/images/Avatares/DanAvatar.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Daniela Maciel Carranza Gomez</h5>
+            <p class="card-text">Ingeniera química aprendiz de desarrollo Java. Me gusta el pole-dance, me encanta la
+              aventura una de mis actividades favoritas es acampar. Amo los chocolates.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">
+              <a href="https://github.com/Narian9" target="_blank" class="card-link"><img
+                  src="/Assets/icons/icons8-github-28.png" alt=""></a>
+              <a href="https://www.linkedin.com/in/daniela-maciel-carrazana-b9627a193?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bvo4btbjaRZ%2BadhGi2NesdQ%3D%3D"
+                target="_blank" class="card-link"><img src="/Assets/icons/icons8-linkedin-48.png" alt=""
+                  width="30px"></a>
+            </small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card h-100">
+          <img src="/Assets/images/Avatares/AvataSergioR.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sergio Ramirez</h5>
+            <p class="card-text">Desarrollador Java Full-Stack. Actualmente aprendiendo más sobre linux. Me gusta todo
+              lo relacionado al espacio. Mi snacks favoritos son los que combinan lo dulce con lo salado.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">
+              <a href="https://github.com/SergioRmz" target="_blank" class="card-link"><img
+                  src="/Assets/icons/icons8-github-28.png" alt=""></a>
+              <a href="https://www.linkedin.com/in/sergio-ramirez-b45459266/" target="_blank" class="card-link"><img
+                  src="/Assets/icons/icons8-linkedin-48.png" alt="" width="30px"></a>
+            </small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card h-100">
+          <img src="/Assets/images/Avatares/AvatarAlainV.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ini Alaincoetzin Vazquez Sanchez</h5>
+            <p class="card-text">¡Hola! Soy Alain. Ingeniero en Computación, desarrollador, me gustan los videojuegos,
+              los gatos y las gaseosas.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">
+              <a href="https://github.com/AlainVSDev" target="_blank" class="card-link"><img
+                  src="/Assets/icons/icons8-github-28.png" alt=""></a>
+              <a href="https://www.linkedin.com/in/alain-vazquezs/" target="_blank" class="card-link"><img
+                  src="/Assets/icons/icons8-linkedin-48.png" alt="" width="30px"></a>
+            </small>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
