@@ -1,2 +1,24 @@
-.faq-question{
+.btn{
+    height: 50px;
+    background-color: #590696;
+    padding: auto;
 }
+
+.btn:hover{
+    background-color: #ff6fb5;
+}
+
+.faq-group-title, #faq-title{
+    font-family: 'Fredoka One', cursive;
+}
+
+.faq-item .faq-answer{
+    font-family: 'Lexend', sans-serif;
+}
+
+.card{
+    background-color: #ff6fb5;
+    color: white;
+}
+
+

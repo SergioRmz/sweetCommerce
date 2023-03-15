@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
   <!-- inserción de estilos  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -18,36 +21,32 @@
   </div>
   <main>
     <!-- contenedor padre -->
-    <div class="container container--flush container--narrow">
-      <div>
-        <h2 id="faq-title" class="text-center">Preguntas frecuentes (F.A.Q)</h2>
-      </div>
+    <div class="container container--flush">
+      <div><h2 id="faq-title" class="text-center">Preguntas frecuentes (F.A.Q)</h2></div>
       <!-- preguntas generales -->
-     
       <div class="faq-group">
-        <div class="faq-group-title heading h3 text-center">Preguntas de los productos</div>
+        <div class="faq-group-title heading h3 text-center">Preguntas generales</div>
         <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="faq-item btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question3">
+          <button class="faq-item btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question1">
             <div class="faq-item-wrapper">
-              Que pasa si el item que ordene no está disponible?
+              Que pasa si el producto que ordene no está disponible?
             </div>
           </button>
-          <div class="collapse" id="question3">
-            <div class="faq-answer card card-body">
+          <div class="collapse" id="question1">
+            <div class="faq-answer card card-body text-center">
               En el caso de que esto suceda, sweetcommerce te notificara dentro de las siguientes 24 horas después de tu
               compra.
             </div>
           </div>
 
-          <button class="faq-item btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question4">
+          <button class="faq-item btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question2">
             <div class="faq-item-wrapper">
-              Que pasa si el item que ordene no está disponible?
+              Como se si puedo usar un cupón durante mi compra?
             </div>
           </button>
-          <div class="collapse" id="question4">
-            <div class="faq-answer card card-body">
-              En el caso de que esto suceda, sweetcommerce te notificara dentro de las siguientes 24 horas después de tu
-              compra.
+          <div class="collapse" id="question2">
+            <div class="faq-answer card card-body text-center">
+              Por favor verifica los terminos y condiciones mismos que se indican en el mismo cupón.
             </div>
           </div>
         </div>
@@ -61,87 +60,94 @@
         <div class="d-grid gap-2 col-6 mx-auto">
           <button class="faq-item btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question3">
             <div class="faq-item-wrapper">
-              Que pasa si el item que ordene no está disponible?
+              Ustedes fabrican alguno de los productos que venden?
             </div>
           </button>
           <div class="collapse" id="question3">
-            <div class="faq-answer card card-body">
-              En el caso de que esto suceda, sweetcommerce te notificara dentro de las siguientes 24 horas después de tu
-              compra.
+            <div class="faq-answer card card-body text-center">
+              No, sweetcommerce únicamente se encarga de la distribución de las marcas.
             </div>
           </div>
 
           <button class="faq-item btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question4">
             <div class="faq-item-wrapper">
-              Que pasa si el item que ordene no está disponible?
+              Puedo solicitar un producto no disponible?
             </div>
           </button>
           <div class="collapse" id="question4">
-            <div class="faq-answer card card-body">
-              En el caso de que esto suceda, sweetcommerce te notificara dentro de las siguientes 24 horas después de tu
-              compra.
+            <div class="faq-answer card card-body text-center">
+              Claro!, por favor contactanos por medio del formulario en la sección contacto.
             </div>
           </div>
         </div>
       </div>
 
-      <!-- productos de los envios -->
+      <!-- preguntas de los envios -->
 
       <div class="faq-group">
         <div class="faq-group-title heading h3 text-center">Preguntas de los envíos</div>
         <div class="d-grid gap-2 col-6 mx-auto">
           <button class="faq-item btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question5">
             <div class="faq-item-wrapper">
-              Que pasa si el item que ordene no está disponible?
+              Ofrecen envíos gratis?
             </div>
           </button>
           <div class="collapse" id="question5">
-            <div class="faq-answer card card-body">
-              En el caso de que esto suceda, sweetcommerce te notificara dentro de las siguientes 24 horas después de tu
-              compra.
+            <div class="faq-answer card card-body text-center">
+              Ofrecemos envío gratis a toda la república Mexicana en compras mayores a $399 MXN.
             </div>
           </div>
 
-          <button class="faq-item btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question2">
+          <button class="faq-item btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question6">
             <div class="faq-item-wrapper">
-              Que pasa si el item que ordene no está disponible?
+              Desde dónde se realizan los envíos?
             </div>
           </button>
-          <div class="collapse" id="question2">
-            <div class="faq-answer card card-body">
-              En el caso de que esto suceda, sweetcommerce te notificara dentro de las siguientes 24 horas después de tu
-              compra.
+          <div class="collapse" id="question6">
+            <div class="faq-answer card card-body text-center">
+              Nuestro almacén esta ubicado en Tepotzotlán, edo Méx.
             </div>
           </div>
 
-          <button class="faq-item btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question2">
+          <button class="faq-item btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question7">
             <div class="faq-item-wrapper">
-              Que pasa si el item que ordene no está disponible?
+              Cuál es el precio del envío?
             </div>
           </button>
-          <div class="collapse" id="question2">
-            <div class="faq-answer card card-body">
-              En el caso de que esto suceda, sweetcommerce te notificara dentro de las siguientes 24 horas después de tu
-              compra.
+          <div class="collapse" id="question7">
+            <div class="faq-answer card card-body text-center">
+              Depende de varios factores, cómo código postal, monto de compra, etc.
             </div>
           </div>
 
-          <button class="faq-item btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question2">
+          <button class="faq-item btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question8">
             <div class="faq-item-wrapper">
-              Que pasa si el item que ordene no está disponible?
+              Cuando llegará mi producto?
             </div>
           </button>
-          <div class="collapse" id="question2">
-            <div class="faq-answer card card-body">
-              En el caso de que esto suceda, sweetcommerce te notificara dentro de las siguientes 24 horas después de tu
-              compra.
+          <div class="collapse" id="question8">
+            <div class="faq-answer card card-body text-center">
+              Los productos son enviados de 1 a 2 días hábiles después de tu compra.
             </div>
           </div>
-
         </div>
       </div>
 
-  <!-- div del container padre -->
+      <!-- Contacto faq -->
+
+      <div class="faq-group">
+        <div class="faq-group-title heading h3 text-center">Contactanos!</div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <div class="card">
+            <img class="mx-auto d-block" src="../../icons/icons8-phone.png" alt="phone image" srcset="">
+            <div>
+              <p class="faq-item text-center">Atención sweetcommerce</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- cierre div del container padre -->
     </div>
   </main>
   <!-- inserción de scripts -->
