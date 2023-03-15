@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <!-- inserción de estilos  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+  <div>
+     <!-- div para navbar -->
+  </div>
+  <main>
+    <!-- contenedor padre -->
+    <div class="container container--flush container--narrow">
+      <div>
+        <h2 id="faq-title" class="text-center">Preguntas frecuentes (F.A.Q)</h2>
+      </div>
+      <!-- preguntas generales -->
+      <div class="faq-group">
+      <div class="faq-group-title heading h3 text-center">Preguntas generales</div>
+      <div class="faq-item">
+        <div class="faq-item-wrapper">
+          <div class="d-grid gap-1 col-6 mx-auto">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question1">
+              Que pasa si el item que ordene no está disponible?
+            </button>
+            <div class="collapse" id="question1">
+              <div class="card card-body">
+                En el caso de que esto suceda, sweetcommerce te notificara dentro de las siguientes 24 horas después de tu compra.
+              </div>
+            </div>
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#question2">
+              Que pasa si el item que ordene no está disponible?
+            </button>
+            <div class="collapse" id="question2">
+              <div class="card card-body">
+                En el caso de que esto suceda, sweetcommerce te notificara dentro de las siguientes 24 horas después de tu compra.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      
+  </main>
+  <!-- inserción de scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
