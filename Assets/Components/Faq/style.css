@@ -1,3 +1,7 @@
+body{
+    background-color: #f6f6f6;
+}
+
 .btn{
     height: 50px;
     background-color: #590696;
@@ -16,9 +20,15 @@
     font-family: 'Lexend', sans-serif;
 }
 
-.card{
+.faq-title{
     background-color: #ff6fb5;
     color: white;
 }
+
+.faq-contact{
+    background-color:#ff6fb5;
+    color:white;
+}
+
 
 
