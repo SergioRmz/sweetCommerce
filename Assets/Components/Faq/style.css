@@ -3,13 +3,13 @@ body{
 }
 
 .btn{
-    height: 50px;
+    height: 70px;
     background-color: #590696;
-    padding: auto;
 }
 
 .btn:hover{
     background-color: #ff6fb5;
+
 }
 
 .faq-group-title, #faq-title{
@@ -27,6 +27,10 @@ body{
 
 .faq-contact{
     background-color:#ff6fb5;
+    color:white;
+}
+
+.faq-item-wrapper{
     color:white;
 }
 
