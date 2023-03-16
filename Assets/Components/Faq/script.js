@@ -1,5 +1,4 @@
-// const title = document.querySelector("#faq-title");
-// title.textContent = "Preguntas frecuentes";
-// document.querySelector("#faq-title").appendChild(title);
-
-
+const faceButton = document.querySelector('#fb-btn');
+faceButton.addEventListener('click', () => {
+  window.open('https://www.facebook.com', '_blank');
+});
