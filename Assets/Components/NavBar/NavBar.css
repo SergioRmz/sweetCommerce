@@ -5,10 +5,18 @@
 #navBar-partTwo-item, #navBar-partTwo{
   background-color: #590696;
   padding-top: 0;
-  color: #ffff;
+  
 }
-.nav-link, #nav-link-dulce, #nav-link-chocolate, #nav-link-bebidas, #nav-link-snacks,#nav-link-cajasMisteriosas{
-  color: #ffff;
+#navBar-partTwo .nav-link {
+  color: #fff;
+
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #sweetLogo{
@@ -20,10 +28,9 @@
   visibility: collapse;
 }
 #sweetLogo{
-  height: 27vw;
+  height: 25vw;
 }
 }
-
 
 .icons{
   width:100%;
