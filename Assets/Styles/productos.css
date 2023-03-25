@@ -1,0 +1,67 @@
+body{
+    background-color:#f6f6f6;
+}
+/*  .card{
+width: 300px;
+
+}  */
+
+/* @media only screen and (max-width: 630px)  {
+    .card{
+        width: auto;
+  }
+}  */
+
+/* @media only screen and (max-width: 400px) {
+     For mobile phones: 
+    [class*="col-"] {
+      width: 100%;
+    }
+  } */
+
+  /* @media only screen and (max-width: 600px) {
+    For mobile phones:
+    [class*="col-"] {
+      width: 50%;
+    }
+  } */
+/*  @media only screen and (max-width: 800px) {
+    For mobile phones:
+    [class*="col-"] {
+      width: 50%;
+    }
+  }  */
+#contenido{
+    float: left;
+    background-color: aqua;
+    column-width: 150px;
+    height: 300px;
+    margin-top: 35px;
+} 
+/* .col-xs10{
+    margin-top: 3%;
+}
+ */
+/* .card-img-top{
+    width: 250px;
+    
+} */
+ .card-header{
+    border-bottom: none;
+    height: 45px;
+}
+.card-footer{
+    border-top: none;
+    height: 50px;
+}
+ 
+.btn{
+
+}
+.btn1{
+    margin-left: 70%;
+}
+/* #piePagina{
+    background-color: hotpink;
+    height: 100px;
+} */
