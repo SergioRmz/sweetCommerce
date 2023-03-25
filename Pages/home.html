@@ -7,12 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend&display=swap" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../Assets/Components/NavBar/NavBar.css" />
-    <link rel="stylesheet" href="/Assets/Styles/home.css" />
+      rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../Assets/Components/NavBar/NavBar.css" /> 
+    <link rel="stylesheet" href="../Assets/Styles/home.css" />
+    <link rel="stylesheet" href="../Assets/Styles/categoriasPopularesHome.css">
+
     <title>SweetCommerce</title>
   </head>
 
@@ -63,7 +63,7 @@
             <!-- Imagen 1 -->
             <div class="carousel-item active">
               <img
-                src="./Assets/Images/Carousel/website_egg_BANNER_1300x.webp"
+                src="/Assets/Images/Carousel/website_egg_BANNER_1300x.webp"
                 class="d-block w-100"
                 alt="..."
               />
@@ -71,21 +71,11 @@
                 <!-- Aquí se puede colocar una descripción -->
               </div>
             </div>
-            <!-- Carousel Dispositivos pequeños -->
-            <!-- <div class="smallDevicesItem carousel-item active">
-              <img
-                src="../../images/Carousel/website_egg_BANNER_1300x.webp"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                 Aquí se puede colocar una descripción 
-              </div>
-            </div> -->
+
             <!-- Imagen 2 -->
             <div class="carousel-item">
               <img
-                src="./Assets/images/Carousel/website_egg_BANNER_1300x.webp"
+                src="/Assets/Images/Carousel/website_egg_BANNER_1300x.webp"
                 class="d-block w-100"
                 alt="..."
               />
@@ -96,7 +86,7 @@
             <!-- Imagen 3 -->
             <div class="carousel-item">
               <img
-                src="./Assets/images/Carousel/website_egg_BANNER_1300x.webp"
+                src="/Assets/images/Carousel/website_egg_BANNER_1300x.webp"
                 class="d-block w-100"
                 alt="..."
               />
@@ -107,7 +97,7 @@
             <!-- Imagen 4 -->
             <div class="carousel-item">
               <img
-                src="./Assets/images/Carousel/website_egg_BANNER_1300x.webp"
+                src="/Assets/images/Carousel/website_egg_BANNER_1300x.webp"
                 class="d-block w-100"
                 alt="..."
               />
@@ -148,79 +138,25 @@
             <span id="headlineButton1"><h2>Ver más...</h2></span>
           </button>
         </div>
-        <!-- Sección de cards -->
-        <!-- <div id="homeCardSection" class="row p-0 justify-content-between"> -->
-          <!-- Contenedor de card 1 y 2 -->
-          <!-- <div class="homeCardContainer col-md-4 col-sm-6 row">
-            <div id="card1" class="homeCards col" style="width: 10rem">
-              <img
-                class="w-100"
-                src="../../images/popularCategorias/109192705_116119630180066_966952021339786987_n.jpg"
-                alt=""
-              />
-            </div>
-
-            <div id="card2" class="homeCards col" style="width: 10rem">
-              <img
-                class="w-100"
-                src="../../images/popularCategorias/109192705_116119630180066_966952021339786987_n.jpg"
-                alt=""
-              />
-            </div>
-          </div> -->
-          <!-- Contenedor de card 3 y 4 -->
-          <!-- <div class="homeCardContainer col-md-4 col-sm-6 row">
-            <div id="card3" class="homeCards col" style="width: 10rem">
-              <img
-                class="w-100"
-                src="../../images/popularCategorias/109192705_116119630180066_966952021339786987_n.jpg"
-                alt=""
-              />
-            </div>
-
-            <div id="card4" class="homeCards col" style="width: 10rem">
-              <img
-                class="w-100"
-                src="../../images/popularCategorias/109192705_116119630180066_966952021339786987_n.jpg"
-                alt=""
-              />
-            </div>
-          </div> -->
-          <!-- Contenedor de card 5-->
-          <!-- <div class="homeCardContainer col-md-4 col-sm-6 row">
-            <div id="card5" class="homeCards col" style="width: 10rem">
-              <img
-                class="w-100"
-                src="../../images/popularCategorias/109192705_116119630180066_966952021339786987_n.jpg"
-                alt=""
-              />
-            </div>
-            <div id="card6" class="homeCards col" style="width: 10rem">
-              <img
-                class="w-100"
-                src="../../images/popularCategorias/109192705_116119630180066_966952021339786987_n.jpg"
-                alt=""
-              />
-            </div>
-          </div> </div>--> 
-
-          <div id="includeHtml" class="w-100 ps-0 pe-0 pt-0"></div>
+        <!-- Carrusel de categorías-->
+        <div id="includeCategoriasPopulares" class="w-100 ps-0 pe-0 pt-0"></div>
         
       </section>
-      <!--  -->
+      <!-- Sección3: productos populares (cards) -->
       <section id="" class="">
         <!-- -->
         <div id="etiquetas" class=""></div>
         <!-- Sección de cards -->
-        <div></div>
+        <div id="includeProductosPopularesHome" class="w-100 ps-0 pe-0 pt-0"></div>
       </section>
-      <!--  -->
+      <!-- Sección 4: productos (cards) -->
       <section id="" class="">
-        <!--  -->
+        <!-- -->
         <div id="etiquetas" class=""></div>
         <!-- Sección de cards -->
-        <div></div>
+        <div id="includeProductosPopularesHome2" class="w-100 ps-0 pe-0 pt-0"></div>
       </section>
+
       <!--  -->
       <section id="" class="">
         <!-- Sección de etiquetas los populares y ver más -->
@@ -237,15 +173,17 @@
       </section>
     </main>
 
+    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/Assets/Components/HomeComponets/categoriasPopularesHome.html"></script>
-
-    <script src="/Assets/Scripts/js/jquery-3.3.1.min.js"></script>
+      crossorigin="anonymous"></script>
+    <script src="/Assets/Scripts/js/jquery-3.3.1.min.js">        </script>
 		<script src="/Assets/Scripts/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="/Assets/Scripts/js/jquery.backstretch.min.js">   </script>
+    
+    <!-- <script src="../Assets/Scripts/categoriasPopularesHome.js"></script> -->
     <script src="/Assets/Scripts/home.js"></script>
   </body>
 </html>
