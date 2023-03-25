@@ -1,0 +1,75 @@
+body,main{
+    background-color: #f6f6f6;
+}
+@media (max-width: 992px)  {
+    /* {
+        visibility: collapse;
+    } */
+    #homeEtiquetas{
+        color: #FF6FB5;
+        
+    }
+    
+    #homeButton{
+
+    }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) { 
+    #imageSection{
+        background-color: #f6f6f6;
+        width: 100%;
+    }
+    #carousel,#carouselCaptions{
+        width: 100%;
+        padding: 0;
+        border:0;
+    }
+    #headlineButton1> h2, #headlineSection1{
+        font-size: 1rem;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    .smallDevices{
+        visibility: hidden;
+      }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+ }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {  }
+#carousel{
+    background-color: #f6f6f6;
+}
+
+#homeEtiquetas{
+    color: #FF6FB5;
+    
+}
+#homeButton{
+    border:0;
+    background-color: rgba(245, 245, 245, 0);  
+    color: #FF6FB5;
+
+}
+#headlineButton1> span ,#headlineSection1 > h1{
+    font-size: 16px;
+    box-shadow: 0 0 20px  rgba(255, 255, 255, 0), 0 0 20px  rgba(0,0,0,0.19); 
+    background-color: rgba(245, 245, 245, 0.384);
+    color: #FF6FB5;
+}
+.homeCards,.homeCardContainer{
+    padding: 0;
+}

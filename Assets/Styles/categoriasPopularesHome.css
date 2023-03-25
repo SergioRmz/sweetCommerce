@@ -1,0 +1,36 @@
+@media (max-width: 576px) {
+    .carruselInner .carousel-item > div {
+        display: none;
+    }
+    .carruselInner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+.card-img{
+    
+}
+
+.carruselInner .carousel-item.active,
+.carruselInner .carousel-item-next,
+.carruselInner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carruselInner .carousel-item-end.active,
+    .carruselInner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carruselInner .carousel-item-start.active, 
+    .carruselInner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carruselInner .carousel-item-end,
+.carruselInner .carousel-item-start { 
+    transform: translateX(0);
+}
