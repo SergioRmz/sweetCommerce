@@ -1,0 +1,46 @@
+body{
+    background-color: #f6f6f6;
+}
+
+.btn{
+    height: 70px;
+    background-color: #590696;
+}
+
+.btn:hover{
+    background-color: #ff6fb5;
+
+}
+
+.faq-group-title, #faq-title{
+    font-family: 'Fredoka One', cursive;
+}
+
+.faq-item .faq-answer{
+    font-family: 'Lexend', sans-serif;
+}
+
+.faq-title{
+    background-color: #ff6fb5;
+    color: white;
+}
+
+.faq-contact{
+    background-color:#ff6fb5;
+    color:white;
+}
+
+.faq-item-wrapper{
+    color:white;
+}
+
+.faq-group{
+    padding-top: 2px;
+}
+
+.contact-button{
+    background-color: white;
+}
+
+
+
