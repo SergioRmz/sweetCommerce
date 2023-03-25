@@ -1,4 +1,4 @@
 $(function(){
-    $("#navBarSection").load("../NavBar/NavBar.html");
-    $("#includeHtml").load("categoriasPopularesHome.html");
+    $("#navBarSection").load("/Assets/Components/NavBar/NavBar.html");
+    $("#includeHtml").load("/Assets/Components/HomeComponets/categoriasPopularesHome.html");
 });
