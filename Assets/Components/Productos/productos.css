@@ -51,10 +51,16 @@ width: 300px;
     height: 45px;
 }
 .card-footer{
+    background-color: #ff6fb5;
+    opacity: 70%;
     border-top: none;
     height: 50px;
 }
- 
+.add{
+    background-color: #87EF6E;
+    text-decoration-color: #590696;
+    margin-inline-end: 10%;
+}
 .btn{
 
 }
