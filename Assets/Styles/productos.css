@@ -1,10 +1,22 @@
 body{
     background-color:#f6f6f6;
 }
-/*  .card{
-width: 300px;
 
-}  */
+/* .faq-group-title, #faq-title{
+  font-family: 'Fredoka One', cursive;
+}
+*/
+
+.card-title, .card-text{
+  font-family: 'Lexend', sans-serif;
+} 
+.card-text{
+  text-align: right;
+}
+/* .card{
+  min-height: 50px;
+
+} */
 
 /* @media only screen and (max-width: 630px)  {
     .card{
@@ -42,27 +54,59 @@ width: 300px;
     margin-top: 3%;
 }
  */
-/* .card-img-top{
+.h2{
+  font-family: 'Fredoka One';
+  text-align: center;
+}
+
+.card-img-top{
     width: 250px;
+    height: 200px;
+    margin-left: 10%;
     
-} */
+}
+
+ /* @media only screen and (max-width: 780px) {
+    /* For mobile phones: */
+   /* [class*="col-md"] {
+      width: 50%;
+      height: 50%;
+    }
+  }  */
+ /*  @media only screen and (max-width: 640px) {
+    For mobile phones:
+    [class*="col-"] {
+      width: 35%;
+      height: 35%;
+    }
+  } */ 
  .card-header{
     border-bottom: none;
     height: 45px;
 }
 .card-footer{
-    background-color: #ff6fb5;
-    opacity: 70%;
+    background-color: #ffffff;
+    
     border-top: none;
     height: 50px;
 }
 .add{
     background-color: #87EF6E;
-    text-decoration-color: #590696;
-    margin-inline-end: 10%;
+    margin-left: 5%;
+    font-family: 'Fredoka One', cursive;
+    color: #590696;
+    border-radius: 8px;
+  
 }
-.btn{
-
+.add:hover{
+  background: #FF6FB5;
+  transform: scale(1.2);
+  
+}
+.btn:hover{
+  background: #FF6FB5;
+  opacity: 40%;
+  transform: scale(1.2);
 }
 .btn1{
     margin-left: 70%;
@@ -71,3 +115,17 @@ width: 300px;
     background-color: hotpink;
     height: 100px;
 } */
+.feedback {
+  /* 
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px; */
+  
+  display: none;
+  background-color: #87EF6E;
+    margin-left: 5%;
+    /* align-self: center; */
+    font-family: 'Fredoka One', cursive;
+    color: #590696;
+  
+}
