@@ -4,208 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend&display=swap" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../NavBar/NavBar.css" />
-    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="../Assets/Components/NavBar/NavBar.css" />
+    <link rel="stylesheet" href="/Assets/Styles/home.css" />
     <title>SweetCommerce</title>
   </head>
 
   <body>
     <!-- Navbar se divide en 2 secciones parte 1 y parte 2 -->
-    <header id="sectionContainer" class="container-fluid ps-0 pe-0 pt-0">
-      <nav class="pt-0" id="header">
-        <div
-          id="navBar-partOne"
-          class="navbar navbar-expand-lg bg-body-tertiary pt-0"
-        >
-          <div id="navBar-partOne-item" class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img
-                id="sweetLogo"
-                src="/Assets/images/Sweet.png"
-                alt="Logo"
-                class="d-inline-block align-text-center"
-              />
-            </a>
+    <header id="navBarSection"></header> 
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button
-                  class="btn btn-outline-success bg-info-subtle border-light-subtle text-info-emphasis"
-                  type="submit"
-                >
-                  Search
-                </button>
-              </form>
-
-              <div class="container">
-                <ul class="nav justify-content-end">
-                  <li class="nav-item collapseItem">
-                    <a class="nav-link active" aria-current="page" href="#">
-                      <img
-                        class="img-fluid"
-                        src="/Assets/icons/icons8-usuario-masculino-en-círculo-48.png"
-                        alt=""
-                      />
-                    </a>
-                  </li>
-                  <li class="nav-item collapseItem">
-                    <a class="nav-link" href="#">
-                      <img
-                        class="img-fluid"
-                        src="/Assets/icons/icons8-me-gusta-48.png"
-                        alt=""
-                      />
-                    </a>
-                  </li>
-                  <li class="nav-item collapseItem">
-                    <a class="nav-link disabled">
-                      <img
-                        src="/Assets/icons/icons8-carrito-de-la-compra-cargado-48.png"
-                        alt=""
-                    /></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Elementos que aparecen al colapsar-->
-
-            <a
-              class="nav-link navbar-toggler border border-0 p-0"
-              href="#"
-              type="link"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span
-                ><img
-                  id="iconSearch"
-                  class="icons"
-                  src="/Assets/icons/icons8-busca-mas-48.png"
-                  alt=""
-              /></span>
-            </a>
-
-            <a
-              class="nav-link navbar-toggler border border-0 p-0"
-              href="#"
-              type="link"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <img
-                id="iconUser"
-                class="icons"
-                src="/Assets/icons/icons8-usuario-masculino-en-círculo-48.png"
-                alt=""
-              />
-            </a>
-            <a
-              class="nav-link navbar-toggler border border-0 p-0"
-              href="#"
-              type="link"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <img
-                id="iconMeEncanta"
-                class="icons"
-                src="/Assets/icons/icons8-me-gusta-48.png"
-                alt=""
-              />
-            </a>
-            <a
-              class="nav-link navbar-toggler border border-0 p-0"
-              href="#"
-              type="link"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <img
-                id="iconCarrito"
-                class="icons"
-                src="/Assets/icons/icons8-carrito-de-la-compra-cargado-48.png"
-                alt=""
-              />
-            </a>
-            <!-- Boton hamburguesa -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        <div
-          id="navBar-partTwo"
-          class="navbar navbar-expand-lg bg-body-tertiary"
-        >
-          <div id="navBar-partTwo-item" class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Dulces</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Chocolate</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Bebidas</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Snacks</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Caja Misteriosa</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
 
     <main id="" class="container-fluid ps-0 pe-0 pt-0">
       <!--Seccion 1: Carousel home -->
@@ -249,7 +63,7 @@
             <!-- Imagen 1 -->
             <div class="carousel-item active">
               <img
-                src="../../images/Carousel/website_egg_BANNER_1300x.webp"
+                src="./Assets/Images/Carousel/website_egg_BANNER_1300x.webp"
                 class="d-block w-100"
                 alt="..."
               />
@@ -271,7 +85,7 @@
             <!-- Imagen 2 -->
             <div class="carousel-item">
               <img
-                src="../../images/Carousel/website_egg_BANNER_1300x.webp"
+                src="./Assets/images/Carousel/website_egg_BANNER_1300x.webp"
                 class="d-block w-100"
                 alt="..."
               />
@@ -282,7 +96,7 @@
             <!-- Imagen 3 -->
             <div class="carousel-item">
               <img
-                src="../../images/Carousel/website_egg_BANNER_1300x.webp"
+                src="./Assets/images/Carousel/website_egg_BANNER_1300x.webp"
                 class="d-block w-100"
                 alt="..."
               />
@@ -293,7 +107,7 @@
             <!-- Imagen 4 -->
             <div class="carousel-item">
               <img
-                src="../../images/Carousel/website_egg_BANNER_1300x.webp"
+                src="./Assets/images/Carousel/website_egg_BANNER_1300x.webp"
                 class="d-block w-100"
                 alt="..."
               />
@@ -428,8 +242,10 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="../../js/jquery-3.3.1.min.js"></script>
-		<script src="../../js/jquery-migrate-3.0.0.min.js"></script>
-    <script src="home.js"></script>
+    <script src="/Assets/Components/HomeComponets/categoriasPopularesHome.html"></script>
+
+    <script src="/Assets/Scripts/js/jquery-3.3.1.min.js"></script>
+		<script src="/Assets/Scripts/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="/Assets/Scripts/home.js"></script>
   </body>
 </html>
