@@ -14,7 +14,7 @@ body{
   text-align: right;
 }
 /* .card{
-  min-height: 50px;
+  margin-bottom: 15px;
 
 } */
 
@@ -62,7 +62,7 @@ body{
 .card-img-top{
     width: 250px;
     height: 200px;
-    margin-left: 10%;
+    padding: 0vw 2vw 0 2vw;
     
 }
 
@@ -85,13 +85,12 @@ body{
     }
   }  */
  .card-header{
-    border-bottom: none;
+    border-bottom: none !important;
     height: 45px;
 }
 .card-footer{
     background-color: #ffffff;
-    
-    border-top: none;
+    border-top: none !important;
     height: 50px;
 }
 .add{
