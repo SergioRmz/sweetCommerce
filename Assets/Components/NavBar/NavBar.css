@@ -27,11 +27,17 @@
   height: 150px;
 }
  @media (max-width: 992px)  {
-  /*.collapseItem{
-  visibility: collapse;
-} */
+  /* .collapseItem{
+
+}  */
+#botonHamburguesa{
+  width: 8vw;
+}
+#spanBtnHamburgesa{
+  width: 100%;
+}
 #sweetLogo{
-  height: 24vw;
+  height: 25vw;
   padding:0 !important;
 }
 .navbar-toggler{
@@ -45,10 +51,10 @@
   width:100%;
   height: auto;
 }
-#iconSearch, #iconUser,#iconMeEncanta,#iconCarrito,#iconCarrito{
+/* #iconSearch, #iconUser,#iconMeEncanta,#iconCarrito,#iconCarrito{
   width: 9vw;
   padding-right: 1vw;
-}
+} */
 
 
 

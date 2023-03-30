@@ -22,7 +22,7 @@
           id="navBar-partOne"
           class="navbar navbar-expand-lg bg-body-tertiary pt-0"
         >
-          <div id="navBar-partOne-item" class="container-fluid">
+          <div id="navBar-partOne-item" class="container-fluid justify-content-between ps-1">
             <!-- LOGO vinculado a home -->
             <a class="navbar-brand ps-0 pe-0" href="home.html">
               <img
@@ -71,128 +71,33 @@
               /></span>
             </a>
         <!-- PROBANDO CAMBIOS -->
-        <div class="nav-link" id="iconsSection">
-          <ul class="nav ">
-            <li class="nav-item collapseItem">
-              <a id="userIcon" class="nav-link active" aria-current="page" href="login.html">
-                <img
-                  class="img-fluid"
-                  src="../Assets/images/icons/icons8-usuario-masculino-en-círculo-48.png"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="nav-item collapseItem">
-              <a class="nav-link" href="listaDeseos.html">
-                <img
-                  class="img-fluid"
-                  src="../Assets/images/icons/icons8-me-gusta-48.png"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="nav-item collapseItem">
-              <a class="nav-link " href="carrito.html">
-                <img
-                  src="../Assets/images/icons/icons8-carrito-de-la-compra-cargado-48.png"
-                  alt=""
-              /></a>
-            </li>
-          </ul>
+        <a id="userIcon" class="nav-link navbar-toggler border border-0 p-0" aria-current="page" href="login.html">
+          <img
+            class="img-fluid"
+            src="../Assets/images/icons/icons8-usuario-masculino-en-círculo-48.png"
+            alt=""
+          />
+        </a>
 
-        </div>
+        <a class="nav-link navbar-toggler border border-0 p-0" href="listaDeseos.html">
+          <img
+            class="img-fluid"
+            src="../Assets/images/icons/icons8-me-gusta-48.png"
+            alt=""
+          />
+        </a>
+        <a class="nav-link navbar-toggler border border-0 p-0 " href="carrito.html">
+          <img
+            class="img-fluid"
+            src="../Assets/images/icons/icons8-carrito-de-la-compra-cargado-48.png"
+            alt=""
+        /></a>
             
-           
-            <!-- <div class="collapse navbar-collapse" id="navbarNav">
-              <div class="container">
-                <ul class="collapse navbar-collapse justify-content-end">
-                  <li class="nav-item collapseItem">
-                    <a id="userIcon" class="nav-link active" aria-current="page" href="#">
-                      <img
-                        class="img-fluid"
-                        src="../Assets/images/icons/icons8-usuario-masculino-en-círculo-48.png"
-                        alt=""
-                      />
-                    </a>
-                  </li>
-                  <li class="nav-item collapseItem">
-                    <a class="nav-link" href="listaDeseos.html">
-                      <img
-                        class="img-fluid"
-                        src="../Assets/images/icons/icons8-me-gusta-48.png"
-                        alt=""
-                      />
-                    </a>
-                  </li>
-                  <li class="nav-item collapseItem">
-                    <a class="nav-link " href="carrito.html">
-                      <img
-                        src="../Assets/images/icons/icons8-carrito-de-la-compra-cargado-48.png"
-                        alt=""
-                    /></a>
-                  </li>
-                </ul>
-              </div>
-            </div> -->
 
-
-            <!-- Segundo elemento: boton usuario -->
-            <!-- <a
-              class="nav-link navbar-toggler border border-0 p-0"
-              href="login.html"
-              type="link"
-              data-bs-toggle="collapse"
-              data-bs-target="#iconsSection"
-              aria-controls="iconsSection"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <img
-                id="iconUser"
-                class="icons"
-                src="/Assets/images/icons/icons8-usuario-masculino-en-círculo-48.png"
-                alt=""
-              />
-            </a>
-
-
-            <a
-              class="nav-link navbar-toggler border border-0 p-0"
-              href="listaDeseos.html"
-              type="link"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <img
-                id="iconMeEncanta"
-                class="icons"
-                src="/Assets/images/icons/icons8-me-gusta-48.png"
-                alt=""
-              />
-            </a>
-            <a
-              class="nav-link navbar-toggler border border-0 p-0"
-              href="carrito.html"
-              type="link"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <img
-                id="iconCarrito"
-                class="icons"
-                src="/Assets/images/icons/icons8-carrito-de-la-compra-cargado-48.png"
-                alt=""
-              />
-            </a> -->
             <!-- Boton hamburguesa -->
             <button
-              class="navbar-toggler"
+              id="botonHamburguesa"
+              class="btn navbar-toggler justify-content-center"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -200,7 +105,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span id="spanBtnHamburgesa" class="navbar-toggler-icon"></span>
             </button>
           </div>
         </div>
