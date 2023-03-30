@@ -26,10 +26,10 @@
   width:auto;
   height: 150px;
 }
-@media (max-width: 992px)  {
-  .collapseItem{
+ @media (max-width: 992px)  {
+  /*.collapseItem{
   visibility: collapse;
-}
+} */
 #sweetLogo{
   height: 24vw;
   padding:0 !important;

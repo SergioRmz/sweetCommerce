@@ -23,7 +23,7 @@
           class="navbar navbar-expand-lg bg-body-tertiary pt-0"
         >
           <div id="navBar-partOne-item" class="container-fluid">
-            <!-- -->
+            <!-- LOGO vinculado a home -->
             <a class="navbar-brand ps-0 pe-0" href="home.html">
               <img
                 id="sweetLogo"
@@ -49,9 +49,61 @@
             </button>
           </form>
         </div>
+            <!-- Elementos que aparecen al colapsar-->
+            <!-- Primer: elemento barra de busqueda -->
+            <a
+              class="btn nav-link navbar-toggler border border-0 p-0"
+              href="#barraBusqueda"
+              role="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#barraBusqueda"
+              aria-controls="barraBusqueda"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+
+              <span
+                ><img
+                  id="iconSearch"
+                  class="img-fluid"
+                  src="../Assets/images/icons/icons8-busca-mas-48.png"
+                  alt=""
+              /></span>
+            </a>
+        <!-- PROBANDO CAMBIOS -->
+        <div class="nav-link" id="iconsSection">
+          <ul class="nav ">
+            <li class="nav-item collapseItem">
+              <a id="userIcon" class="nav-link active" aria-current="page" href="login.html">
+                <img
+                  class="img-fluid"
+                  src="../Assets/images/icons/icons8-usuario-masculino-en-círculo-48.png"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="nav-item collapseItem">
+              <a class="nav-link" href="listaDeseos.html">
+                <img
+                  class="img-fluid"
+                  src="../Assets/images/icons/icons8-me-gusta-48.png"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="nav-item collapseItem">
+              <a class="nav-link " href="carrito.html">
+                <img
+                  src="../Assets/images/icons/icons8-carrito-de-la-compra-cargado-48.png"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+
+        </div>
             
            
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- <div class="collapse navbar-collapse" id="navbarNav">
               <div class="container">
                 <ul class="collapse navbar-collapse justify-content-end">
                   <li class="nav-item collapseItem">
@@ -81,37 +133,17 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> -->
 
-            <!-- Elementos que aparecen al colapsar-->
-            <!-- Primer: elemento barra de busqueda -->
-            <a
-              class="btn nav-link navbar-toggler border border-0 p-0"
-              href="#barraBusqueda"
-              role="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#barraBusqueda"
-              aria-controls="barraBusqueda"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
 
-              <span
-                ><img
-                  id="iconSearch"
-                  class="icons"
-                  src="../Assets/images/icons/icons8-busca-mas-48.png"
-                  alt=""
-              /></span>
-            </a>
-            <!-- Segundo elemento: boton usuario-->
-            <a
+            <!-- Segundo elemento: boton usuario -->
+            <!-- <a
               class="nav-link navbar-toggler border border-0 p-0"
-              href="carrito.html"
+              href="login.html"
               type="link"
               data-bs-toggle="collapse"
-              data-bs-target="#userIcon"
-              aria-controls="navbarNav"
+              data-bs-target="#iconsSection"
+              aria-controls="iconsSection"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
@@ -126,7 +158,7 @@
 
             <a
               class="nav-link navbar-toggler border border-0 p-0"
-              href="#"
+              href="listaDeseos.html"
               type="link"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -143,7 +175,7 @@
             </a>
             <a
               class="nav-link navbar-toggler border border-0 p-0"
-              href="#"
+              href="carrito.html"
               type="link"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -157,7 +189,7 @@
                 src="/Assets/images/icons/icons8-carrito-de-la-compra-cargado-48.png"
                 alt=""
               />
-            </a>
+            </a> -->
             <!-- Boton hamburguesa -->
             <button
               class="navbar-toggler"
