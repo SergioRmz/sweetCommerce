@@ -1,0 +1,28 @@
+.card-title{
+    font-family: 'Fredoka One', cursive;
+}
+
+.card-text{
+    font-family: 'Lexend', sans-serif;
+}
+
+.text-muted {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.card {
+	display: flex;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	background: #fff;
+	transition: all .6s ease;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card:hover {
+	border: none;
+	transform: scale(1.01);
