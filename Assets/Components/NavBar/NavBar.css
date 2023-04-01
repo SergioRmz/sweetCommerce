@@ -22,33 +22,54 @@
   align-items: center;
 }
 
+
 #sweetLogo{
-  width:auto;
-  height: 150px;
+  height:15vw;
+  width: auto;
 }
-@media (max-width: 992px)  {
-  .collapseItem{
-  visibility: collapse;
+ @media (max-width: 992px)  {
+
+#botonHamburguesa, .icons{
+  width: 7vw;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+}
+
+.navbar-brand{
+  height: 13vw;
+  padding-bottom:0 !important;
+  margin: 0 !important;
 }
 #sweetLogo{
-  height: 24vw;
-  padding:0 !important;
-}
-.navbar-toggler{
-  width: 8vw;
-  padding-right:0 !important;
-}
+  height:100%;
+  padding:0vw !important;
+  margin: 0 !important;
 
 }
 
-.icons{
-  width:100%;
-  height: auto;
+
 }
-#iconSearch, #iconUser,#iconMeEncanta,#iconCarrito,#iconCarrito{
-  width: 9vw;
-  padding-right: 1vw;
-}
+@media (max-width: 576px)  {
+
+  #botonHamburguesa, .icons{
+    width: 12vw;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+  }
+  
+  .navbar-brand, #sweetLogo{
+    height: 26vw;
+    padding:0 !important;
+    margin: 0 !important;
+  }
+  
+  
+  }
+  
+
+
 
 
 

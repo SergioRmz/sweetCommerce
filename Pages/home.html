@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend&display=swap" rel="stylesheet">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"/>
-    <link rel="stylesheet" href="../Assets/Components/NavBar/NavBar.css" /> 
-    <link rel="stylesheet" href="../Assets/Styles/home.css" />
-    <link rel="stylesheet" href="../Assets/Styles/categoriasPopularesHome.css">
 
-    <title>SweetCommerce</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../Assets/Components/NavBar/NavBar.css" />
+  <link rel="stylesheet" href="/Assets/Styles/productos.css">
+  <link rel="stylesheet" href="../Assets/Components/Footer/footer.css">
+  <link rel="stylesheet" href="/Assets/Styles/home.css" />
+  <title>SweetCommerce</title>
+</head>
 
+<body>
   <body>
     <!-- Navbar se divide en 2 secciones parte 1 y parte 2 -->
     <header id="navBarSection"></header> 
 
 
     <main id="" class="container-fluid ps-0 pe-0 pt-0">
-      <!--Seccion 1: Carousel home -->
+      <!--Seccion 1: Carousel home anuncios -->
+      <!-- Carrusel 1: ANUNCIOS/PROMOCIONES-->
       <section id="carousel" class="container-fluid">
         <div id="carouselCaptions" class="carousel slide ps-lg-4 pe-lg-4 pt-0">
           <!-- Sección de botones -->
@@ -129,7 +130,7 @@
         </div>
       </section>
 
-      <!--Seccion 2: Carrusel de productos varios  -->
+      <!--Seccion 2: Carrusel de categorias -->
       <section id="" class="container">
         <!-- Sección de etiquetas los populares y ver más -->
         <div id="homeEtiquetas" class="d-flex justify-content-between p-4">
@@ -138,51 +139,560 @@
             <span id="headlineButton1"><h2>Ver más...</h2></span>
           </button>
         </div>
-        <!-- Carrusel de categorías-->
-        <div id="includeCategoriasPopulares" class="w-100 ps-0 pe-0 pt-0"></div>
+        
+        <!-- <div id="includeCategoriasPopulares" class="w-100 ps-0 pe-0 pt-0"></div> -->
         
       </section>
-      <!-- Sección3: productos populares (cards) -->
-      <section id="" class="">
-        <!-- -->
-        <div id="etiquetas" class=""></div>
-        <!-- Sección de cards -->
-        <div id="includeProductosPopularesHome" class="w-100 ps-0 pe-0 pt-0"></div>
+      <!-- Carrusel 2: de categorías-->
+      
+      <section>
+        <div class="container text-center my-3">
+          <div class="row mx-auto my-auto justify-content-center">
+            <div id="categoriasCarousel" class="carousel carruselCustom slide" data-bs-ride="carousel">
+              <div class="carousel-inner carruselInner" role="listbox">
+                <!--  -->
+                <div class="carousel-item popularesCategoriaItem categoriaItem active">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="https://cdn.shopify.com/s/files/1/0250/7483/files/Snacks_f5229a8f-3e01-4692-b121-ff78ce863159_300x.png?v=1670609460" class="img-fluid categoriaCardImg">
+                      </div>
+                      <div class="card-img-overlay">Slide 1</div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="carousel-item popularesCategoriaItem categoriaItem">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="https://cdn.shopify.com/s/files/1/0250/7483/files/gummy_86bcfbe9-f748-480a-968d-89cdac861674_300x.png?v=1670609451" class="img-fluid categoriaCardImg">
+                      </div>
+                      <div class="card-img-overlay">Slide 2</div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="carousel-item popularesCategoriaItem categoriaItem">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="https://cdn.shopify.com/s/files/1/0250/7483/files/gum_0dee578d-4343-4a54-be84-a3d41d2ba0e9_300x.png?v=1670609440" class="img-fluid categoriaCardImg">
+                      </div>
+                      <div class="card-img-overlay">Slide 3</div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="carousel-item popularesCategoriaItem categoriaItem" >
+                  <div class=" col-md-3">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="https://cdn.shopify.com/s/files/1/0250/7483/files/Chocolate_7626f596-16e8-4eb2-aff9-34b7067c58d8_300x.png?v=1670609505" class="img-fluid categoriaCardImg">
+                      </div>
+                      <div class="card-img-overlay">Slide 4</div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="carousel-item popularesCategoriaItem categoriaItem">
+                  <div class=" col-md-3">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="https://cdn.shopify.com/s/files/1/0250/7483/files/retro_671f7cfe-1727-4ddd-b62e-718ce3929e7f_300x.png?v=1670609428" class="img-fluid categoriaCardImg">
+                      </div>
+                      <div class="card-img-overlay">Slide 5</div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="carousel-item popularesCategoriaItem categoriaItem">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-img d-block">
+                        <img src="/Assets/Images/PopularCategorias/109696244_116119626846733_8827703549462747326_n.jpg" class="img-fluid categoriaCardImg">
+                      </div>
+                      <div class="card-img-overlay">Slide 6</div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+              <a class="carousel-control-prev bg-transparent w-aut" href="#categoriasCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </a>
+              <a class="carousel-control-next bg-transparent w-aut" href="#categoriasCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>		
+        </div>
       </section>
+      <!-- Carrusel 3: PRODUCTOS POPULARES-->
+      <!-- Sección: productos populares (cards) -->
+      <section>
+        <div class="container text-center my-3">
+          <div class="row mx-auto my-auto justify-content-center">
+            <div id="popularesCarousel" class="carousel carruselCustom slide" data-bs-ride="carousel">
+              <div class="carousel-inner carruselInner" role="listbox">
+                <!--  -->
+                <div class="carousel-item popularesItem categoriaItem active">
+                  <div class="col-md-3">
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  </div>
+                </div>
+                <!--  -->
+                <div class="carousel-item popularesItem categoriaItem">
+                  <div class="col-md-3">
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  </div>
+                </div>
+        
+                <!--  -->
+                <div class="carousel-item popularesItem categoriaItem">
+                  <div class="col-md-3">
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  </div>
+                </div>
+        
+                <!--  -->
+                <div class="carousel-item popularesItem categoriaItem">
+                  <div class="col-md-3">
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  </div>
+                </div>
+        
+                <!--  -->
+                <div class="carousel-item popularesItem categoriaItem">
+                  <div class="col-md-3">
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  </div>
+                </div>
+        
+                <!--  -->
+                <div class="carousel-item popularesItem categoriaItem">
+                  <div class="col-md-3">
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  </div>
+                </div>
+        
+                <!--  -->
+                <div class="carousel-item popularesItem categoriaItem">
+                  <div class="col-md-3">
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  </div>
+                </div>
+        
+                <!--  -->
+                <div class="carousel-item popularesItem categoriaItem">
+                  <div class="col-md-3">
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  </div>
+                </div>
+        
+                <!--  -->
+                <div class="carousel-item popularesItem categoriaItem">
+                  <div class="col-md-3">
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  </div>
+                </div>
+        
+                <!--  -->
+              </div>
+              <a class="carousel-control-prev bg-transparent w-aut" href="#popularesCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </a>
+              <a class="carousel-control-next bg-transparent w-aut" href="#popularesCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>		
+        </div>
+      </section>
+      <!-- Carrusel 4: PRODUCTOS NUEVOS-->
+      <!--  -->
+      <section>
+      <div class="container text-center my-3">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="populares2Carousel" class="carousel carruselCustom slide" data-bs-ride="carousel">
+            <div class="carousel-inner carruselInner" role="listbox">
+              <!--  -->
+              <div class="carousel-item populares2Item categoriaItem active">
+                <div class="col-md-3">
+                  <!-- Se agrega card tomada de productos -->
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+      
+                </div>
+              </div>
+              <!--  -->
+              <div class="carousel-item populares2Item categoriaItem">
+                <div class="col-md-3">
+                  <!-- Se agrega card tomada de productos -->
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  
+                </div>
+              </div>
+      
+              <div class="carousel-item populares2Item categoriaItem">
+                <div class="col-md-3">
+                  <!-- Se agrega card tomada de productos -->
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  
+                </div>
+              </div>
+              <!--  -->
+              <div class="carousel-item populares2Item categoriaItem" >
+                <div class="col-md-3">
+                  <!-- Se agrega card tomada de productos -->
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  
+                </div>
+              </div>
+              <!--  -->
+              <div class="carousel-item populares2Item categoriaItem">
+                <div class="col-md-3">
+                  <!-- Se agrega card tomada de productos -->
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  
+                </div>
+              </div>
+              <!--  -->
+              <div class="carousel-item populares2Item categoriaItem">
+                <div class="col-md-3">
+                  <!-- Se agrega card tomada de productos -->
+                    <!-- INICIO CARD -->
+                    <div class="card h-100">
+                      <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
+                      <div class="card-header bg-transparent">
+                        <a href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList"
+                            width="30px"></a>
+                      </div>
+                      <img class="card-img-top" src="/Assets/images/Productos/cadbury.jpg" alt="Card image cap" width="">
+                      <div class="card-body">
+                        <h5 class="card-title">Cadbury Dairy Milk</h5>
+                        <p class="card-text">$149.99</p>
+                      </div>
+                      <!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->
+                      <div class="card-footer bg-transparent">
+                          <small class="text-muted">
+                            <a href="#" class="btn1"><button class="add">Añadir</button></a>
+                        </small>
+                      </div>
+                    </div>
+
+                    <!-- FIN CARD -->
+                  
+                </div>
+              </div>
+              <!--  -->
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#populares2Carousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#populares2Carousel" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>		
+      </div>
+      </section>
+
       <!-- Sección 4: productos (cards) -->
-      <section id="" class="">
-        <!-- -->
-        <div id="etiquetas" class=""></div>
-        <!-- Sección de cards -->
-        <div id="includeProductosPopularesHome2" class="w-100 ps-0 pe-0 pt-0"></div>
-      </section>
 
       <!--  -->
-      <section id="" class="">
-        <!-- Sección de etiquetas los populares y ver más -->
-        <div id="etiquetas" class=""></div>
-        <!-- Sección de cards -->
-        <div></div>
-      </section>
-      <!--  -->
-      <section id="" class="">
-        <!-- Sección de etiquetas los populares y ver más -->
-        <div id="etiquetas" class=""></div>
-        <!-- Sección de cards -->
-        <div></div>
-      </section>
+
     </main>
+<footer id="footer-section"></footer>
 
-    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- <script src="/Assets/Components/HomeComponets/categoriasPopularesHome.html"></script> -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"></script>
-    <script src="/Assets/Scripts/js/jquery-3.3.1.min.js">        </script>
-		<script src="/Assets/Scripts/js/jquery-migrate-3.0.0.min.js"></script>
-    
-    <!-- <script src="../Assets/Scripts/categoriasPopularesHome.js"></script> -->
-    <script src="/Assets/Scripts/home.js"></script>
-  </body>
+  <script src="/Assets/Scripts/js/jquery-3.3.1.min.js"></script>
+  <script src="/Assets/Scripts/js/jquery-migrate-3.0.0.min.js"></script>
+  <script src="/Assets/Scripts/categoriasPopularesHome.js"></script>
+  <script src="/Assets/Scripts/home.js"></script>
+</body>
+
 </html>

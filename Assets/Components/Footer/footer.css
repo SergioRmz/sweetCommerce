@@ -1,0 +1,67 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+ul{
+    margin-bottom: 0;
+}
+
+ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #FF6FB5;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+ul li a img{
+    width: 50px;
+    height: 50px;
+}
+ul li a p{
+    color: white;
+}
+
+.twhite {
+    color: white;
+}
+
+.text-fluid{
+    font-size: 80%;
+}
+
+
+footer{
+    background-color: #FF6FB5;
+}
+
+.img-footer{
+    height: 60px;
+    width: auto;
+}
+
+.footer-links{
+    text-align:center;
+}
+
+.footer-text-logo{
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+}
+
+.text-nowrap{
+    word-wrap: normal;
+}
