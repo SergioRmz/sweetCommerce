@@ -1,6 +1,7 @@
 let categoriasItems = document.querySelectorAll('#categoriasCarousel .popularesCategoriaItem');
 let popularesItems = document.querySelectorAll('#popularesCarousel  .popularesItem');
 let populares2Items = document.querySelectorAll('#populares2Carousel  .populares2Item');
+const URL = '../Scripts/js/homeInfo.json';
 
 const carruselFuncion = (grupoDeElementos) =>{
 
@@ -24,6 +25,16 @@ const carruselFuncion = (grupoDeElementos) =>{
 carruselFuncion(categoriasItems);
 carruselFuncion(popularesItems);
 carruselFuncion(populares2Items);
+
+
+
+const getData = () => {
+   fetch('URL')
+ .then(response => response.json())
+ .then(data => console.log(data));
+}
+getData();
+
 
 
 
