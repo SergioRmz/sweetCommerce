@@ -1,36 +1,33 @@
-@media (max-width: 576px) {
-    .carruselInner .carousel-item > div {
-        display: none;
+@media (max-width: 767px) {
+    .carruselInner .categoriaItem > div {
+        display: none !important;
     }
-    .carruselInner .carousel-item > div:first-child {
-        display: block;
+    .carruselInner .categoriaItem > div:first-child {
+        display: block !important;
     }
-}
-.card-img{
-    
 }
 
 .carruselInner .carousel-item.active,
 .carruselInner .carousel-item-next,
 .carruselInner .carousel-item-prev {
-    display: flex;
+    display: flex !important;
 }
 
-/* medium and up screens */
+/*  */
 @media (min-width: 768px) {
 
     .carruselInner .carousel-item-end.active,
     .carruselInner .carousel-item-next {
-        transform: translateX(25%);
+        transform: translateX(25%) !important;
     }
 
     .carruselInner .carousel-item-start.active, 
     .carruselInner .carousel-item-prev {
-        transform: translateX(-25%);
+        transform: translateX(-25%) !important;
     }
 }
 
 .carruselInner .carousel-item-end,
 .carruselInner .carousel-item-start { 
-    transform: translateX(0);
+    transform: translateX(0) !important;
 }

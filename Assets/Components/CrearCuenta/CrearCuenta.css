@@ -1,0 +1,33 @@
+#tituloCrearCuenta {
+    color: rgb(205, 35, 91);
+}
+
+/*Estos estilos modifican el tamaño del boton generando una sombra cada vez que el cuarsor pasa por encima. El boton tambien cuenta con tonos gradientes*/
+.btn-interactive {
+    transform: scale(1);
+  transition: transform 0.9s ease;
+  transition: box-shadow 0.3s ease;
+  background-image: linear-gradient(to bottom left, #11d6f0, #c0fff9);
+    border: 2px solid #ff69b4;
+    font-size: 1.5em;
+    color: #000000;
+    padding: 10px 20px;
+  }
+  
+  .btn-interactive:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #d40574;
+  }
+  
+/*Al dar click en el boton, este se desplazara hacia abajo 2px creando un efecto de hundimiento*/
+  .btn-interactive:active {
+    transform: translateY(2px);
+  }
+  
+  /* Este estilo ayuda a resaltar visualmente el boton cuando esta siendo presionado, lo cual puede ser util para usuarios con discapacidad visuales o para mejorar la experiencia del usuario*/
+  .btn-interactive:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px rgba(100, 91, 100, 0.5);
+  }
+/* Boton gradiente*/                         
+ 

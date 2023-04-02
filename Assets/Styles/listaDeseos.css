@@ -1,0 +1,23 @@
+.wishlist-img{
+    width: 150px;
+}
+
+.remove-button{ 
+    width: 15px; 
+}
+
+.card-body{
+    background-color: #590696;
+    color: white;
+}
+
+.table-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.table-wrapper table {
+  margin: 0 auto;
+}

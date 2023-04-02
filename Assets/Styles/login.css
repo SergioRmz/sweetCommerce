@@ -4,6 +4,7 @@
 
 /*Estos estilos modifican el tamaño del boton generando una sombra cada vez que el cuarsor pasa por encima. El boton tambien cuenta con tonos gradientes*/
 .btn-interactive {
+  margin-top: 1.5rem;
     transform: scale(1);
   transition: transform 0.9s ease;
   transition: box-shadow 0.3s ease;
@@ -29,5 +30,18 @@
     outline: none;
     box-shadow: 0 0 0 5px rgba(100, 91, 100, 0.5);
   }
-/* Boton gradiente*/                         
+/* Boton gradiente*/        
+
+.h2.text-center {
+  margin-top: 2rem;
+}
+.h5.text-center {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.h6.text-center {
+  margin-top: 1.5rem;
+ 
+}
  
