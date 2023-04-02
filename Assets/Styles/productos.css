@@ -1,10 +1,22 @@
 body{
     background-color:#f6f6f6;
 }
-/*  .card{
-width: 300px;
 
-}  */
+/* .faq-group-title, #faq-title{
+  font-family: 'Fredoka One', cursive;
+}
+*/
+
+.card-title, .card-text{
+  font-family: 'Lexend', sans-serif;
+} 
+.card-text{
+  text-align: right;
+}
+/* .card{
+  margin-bottom: 15px;
+
+} */
 
 /* @media only screen and (max-width: 630px)  {
     .card{
@@ -31,32 +43,73 @@ width: 300px;
       width: 50%;
     }
   }  */
-#contenido{
+/* #contenido{
     float: left;
     background-color: aqua;
     column-width: 150px;
     height: 300px;
     margin-top: 35px;
-} 
+}  */
 /* .col-xs10{
     margin-top: 3%;
 }
  */
-/* .card-img-top{
-    width: 250px;
+.h2{
+  font-family: 'Fredoka One';
+  text-align: center;
+}
+
+.card-img-top{
+    width: 150px;
+    height: 250px;
+    padding: 0vw 2vw 0 2vw;
     
-} */
+}
+
+.card-img-top:hover{
+  transform: scale(0.9);
+}
+
+ /* @media only screen and (max-width: 780px) {
+    /* For mobile phones: */
+   /* [class*="col-md"] {
+      width: 50%;
+      height: 50%;
+    }
+  }  */
+  /*  @media (min-width: 480px) {
+    /* For mobile phones: */
+   /* [class*="card-image-top"] {
+      width: 15%;
+      height: 15%;
+    }
+  }  */
  .card-header{
-    border-bottom: none;
+    border-bottom: none !important;
     height: 45px;
 }
 .card-footer{
-    border-top: none;
+    background-color: #ffffff;
+    border-top: none !important;
     height: 50px;
 }
- 
-.btn{
-
+.add{
+    background-color: #87EF6E;
+    margin-left: 5%;
+    font-family: 'Fredoka One', cursive;
+    color: #590696;
+    border-radius: 5px;
+  
+}
+.add:hover{
+  background: #FF6FB5;
+  transform: scale(1.2);
+  
+}
+.btn:hover{
+  background: #FF6FB5;
+  opacity: 40%;
+  transform: scale(1.2);
 }
 .btn1{
     margin-left: 70%;
@@ -65,3 +118,17 @@ width: 300px;
     background-color: hotpink;
     height: 100px;
 } */
+.feedback {
+  /* 
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px; */
+  
+  display: none;
+  background-color: #87EF6E;
+    margin-left: 5%;
+    /* align-self: center; */
+    font-family: 'Fredoka One', cursive;
+    color: #590696;
+  
+}
