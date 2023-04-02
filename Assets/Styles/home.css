@@ -1,18 +1,20 @@
 body,main{
     background-color: #f6f6f6;
-}
-@media (max-width: 992px)  {
-    /* {
-        visibility: collapse;
-    } */
-    #homeEtiquetas{
-        color: #FF6FB5;
-        
-    }
     
-    #homeButton{
+    /* font-family: 'Lexend', sans-serif; */
+}
 
-    }
+.colCategoria {
+    border: 0;
+    border-radius: 25px;
+}
+.cardCategoria{
+    /* box-shadow:  10px 10px 5px  rgba(55, 226, 212, 0.423); */
+}
+
+
+@media (max-width: 992px)  {
+
 }
 
 
@@ -54,10 +56,15 @@ body,main{
 @media (min-width: 1400px) {  }
 #carousel{
     background-color: #f6f6f6;
+
 }
 
-#homeEtiquetas{
+.homeEtiquetas{
     color: #FF6FB5;
+    font-family: 'Lexend', sans-serif;
+    text-shadow: 2px 2px 5px #5a06969d;
+
+    /* font-family: 'Fredoka One', cursive; */
     
 }
 #homeButton{
@@ -74,15 +81,29 @@ body,main{
 }
 .homeCards,.homeCardContainer{
     padding: 0;
+    border: 0;
+}
+.card{
+    border: 0;
+    padding-left: 1% ;
+    
+}
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 1%;
 }
 
 /*************Carruseles secciones*********/
 @media (max-width: 767px) {
     .carruselInner .categoriaItem > div {
         display: none !important;
+
     }
     .carruselInner .categoriaItem > div:first-child {
         display: block !important;
+
     }
 }
 
@@ -90,6 +111,7 @@ body,main{
 .carruselInner .carousel-item-next,
 .carruselInner .carousel-item-prev {
     display: flex !important;
+
 }
 
 /*  */
@@ -98,6 +120,7 @@ body,main{
     .carruselInner .carousel-item-end.active,
     .carruselInner .carousel-item-next {
         transform: translateX(25%) !important;
+
     }
 
     .carruselInner .carousel-item-start.active, 
