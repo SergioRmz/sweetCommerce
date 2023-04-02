@@ -16,23 +16,24 @@
   </head>
   <body>
     <!-- Navbar se divide en 2 secciones parte 1 y parte 2 -->
-    <header id="sectionContainer" class="container-fluid ps-0 pe-0 pt-0">
+    <header id="sectionContainer" class="container-fluid  ps-0 pe-0 pt-0">
       <nav class="pt-0" id="header">
         <div
           id="navBar-partOne"
-          class="navbar navbar-expand-lg bg-body-tertiary pt-0"
+          class="navbar navbar-expand-lg bg-body-tertiary pt-0 justify-content-between"
         >
-          <div id="navBar-partOne-item" class="container-fluid justify-content-between ps-1">
+          <div id="navBar-partOne-item" class="container-fluid  ">
             <!-- LOGO vinculado a home -->
-            <a class="navbar-brand ps-0 pe-0" href="home.html">
+            <a class="navbar-brand" href="home.html">
               <img
                 id="sweetLogo"
                 src="../Assets/images/Sweet.png"
                 alt="Logo"
-                class="d-inline-block align-text-center"
+                class="img-fluid"
               />
             </a>
-            <!--  Barra de busqueda  -->
+            <div class="navbar">
+               <!--  Barra de busqueda  -->
             <div class="collapse navbar-collapse" id="barraBusqueda">
               <!-- Barra de busqueda -->
               <form id="" class="d-flex " role="search">
@@ -50,7 +51,7 @@
           </form>
         </div>
             <!-- Elementos que aparecen al colapsar-->
-            <!-- Primer: elemento barra de busqueda -->
+            <!-- Primer icono: elemento barra de busqueda -->
             <a
               class="btn nav-link navbar-toggler border border-0 p-0"
               href="#barraBusqueda"
@@ -65,15 +66,19 @@
               <span
                 ><img
                   id="iconSearch"
-                  class="img-fluid"
+                  class="icons"
                   src="../Assets/images/icons/icons8-busca-mas-48.png"
                   alt=""
               /></span>
             </a>
         <!-- PROBANDO CAMBIOS -->
-        <a id="userIcon" class="nav-link  border border-0 p-0" aria-current="page" href="login.html">
+        <a  class="nav-link  border border-0 p-0" 
+            aria-current="page" 
+            role="button"
+            href="login.html">
           <img
-            class="img-fluid"
+            id="userIcon"
+            class="icons"
             src="../Assets/images/icons/icons8-usuario-masculino-en-círculo-48.png"
             alt=""
           />
@@ -81,33 +86,39 @@
 
         <a class="nav-link  border border-0 p-0" href="listaDeseos.html">
           <img
-            
-            class="img-fluid"
+            id="deseadosIcon"
+            class="icons"
             src="../Assets/images/icons/icons8-me-gusta-48.png"
             alt=""
           />
         </a>
         <a class="nav-link  border border-0 p-0 " href="carrito.html">
           <img
-            class="img-fluid"
+            id="carritoIcon"
+            class="icons"
             src="../Assets/images/icons/icons8-carrito-de-la-compra-cargado-48.png"
             alt=""
         /></a>
             
 
             <!-- Boton hamburguesa -->
-            <button
+            <a
               id="botonHamburguesa"
-              class="btn navbar-toggler justify-content-center"
-              type="button"
+              class="btn navbar-toggler "
+              role="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
               aria-controls="navbarNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span id="spanBtnHamburgesa" class="navbar-toggler-icon"></span>
-            </button>
+           
+              <img class="w-100 p-0" src="../Assets/Images/Icons/icons8-menú-redondeado-50.png" alt="" srcset="">
+                         
+        </a>
+
+            </div>
+           
           </div>
         </div>
 

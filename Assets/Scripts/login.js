@@ -9,5 +9,6 @@ botonIS.addEventListener('click', () => {
 //finalmente haciendo uso de setItem, logramos el almacenamiento en localStorage
   localStorage.setItem('email', email);
   localStorage.setItem('password', password);
+  window.open('/Pages/home.html', '_blank');
   
 });
