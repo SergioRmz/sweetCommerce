@@ -3,18 +3,25 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
-.container h1 {
-	font-family: 'Fredoka One', cursive;
+h3 {
+	font-family: 'Fredoka One', bold;
 	padding: 20px 0;
 	text-align: center;
 	text-transform: uppercase;
 }
-.project {
-	display: flex;
-}
-.shop {
-	flex: 75%;
+table {
+	font-family: 'Fredoka One', cursive !important;
+	font-size: 18px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin-bottom: 20px;
+	background: #fff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+.table-wrapper:hover {
+	border: none;
+	transform: scale(1.02);
 }
 .box {
 	display: flex;
@@ -30,22 +37,33 @@
 	border: none;
 	transform: scale(1.01);
 }
-.box img {
-	width: 300px;
-	height: 200px;
-	object-fit: cover;
+.remove-button{ 
+    width: 15px; 
 }
-.content {
+/* Estilo para la imagen del producto */
+.cart-img {
+	width: 90px;
+	height: 90px;
+  } 
+/* Estilo para la cantidad del producto */
+  .cart-quantity {
+	width: 50px;
+	text-align: center;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-right: 10px;
+  }
+.container {
 	padding: 20px;
 	width: 100%;
 	position: relative;
 }
-.content h3 {
+.container h3 {
 	margin-bottom: 30px;
-	font-family: 'Fredoka One', cursive;
-	
+	font-family: 'Lexend', sans-serif;
 }
-.content h4 {
+.container h4 {
 	margin-bottom: 50px;
 	font-family: 'Lexend', sans-serif;
 }
@@ -74,9 +92,9 @@
 }
 .right-bar {
 	flex: 25%;
-	margin-left: 20px;
 	padding: 20px;
-	height: 400px;
+	width: 100%;
+	height: 100%;
 	border-radius: 5px;
 	background: #fff;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -107,6 +125,16 @@
 	background-color: #590696;
 }
 @media screen and (max-width: 700px) {
+	table {
+		font-family: 'Fredoka One', cursive !important;
+		font-size: 14px;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		margin-bottom: 20px;
+		background: #fff;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	  }
 	.content h3 {
 			margin-bottom: 15px;
 			white-space: nowrap;
