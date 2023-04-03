@@ -5,6 +5,7 @@
 }
 
 .container h1 {
+	font-family: 'Fredoka One', cursive;
 	padding: 20px 0;
 	text-align: center;
 	text-transform: uppercase;
@@ -41,9 +42,12 @@
 }
 .content h3 {
 	margin-bottom: 30px;
+	font-family: 'Fredoka One', cursive;
+	
 }
 .content h4 {
 	margin-bottom: 50px;
+	font-family: 'Lexend', sans-serif;
 }
 .btn-area {
 	position: absolute;
