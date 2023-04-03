@@ -5,61 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend&display=swap"
+    rel="stylesheet"
+  />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../Assets/Components/NavBar/NavBar.css" />
     <link rel="stylesheet" href="../Assets/Components/Footer/footer.css" />
     <link rel="stylesheet" href="/Assets/Styles/carrito.css" />
 </head>
-<body>
-  <!-- NavBar -->
-  <header id="navBarSection"></header> 
+<body onload="script(Carrito.js);">
+
+  <div>
+        <!-- div para navbar -->
+        <header id="navBarSection"></header> 
+    </div>
 
      <!-- Container del Carrito -->
 
+     <main>
       <div class="container">
-        <h2>Mi Carrito de Compra</h2>
-        <div class="project">
-          <div class="shop">
-            <div class="box" id="item1">
-              <img src="https://cdn.shopify.com/s/files/1/0250/7483/products/cheetos-mac-n-cheese-flamin-hot-flavour-limited-edition-candy-funhouse_500x.jpg?v=1601043287">
-              <div class="content">
-                <h3>Cheetos Mac'n Cheese - Flamin' Hot - 5.6oz</h3>
-                <h4>Precio: $79.99</h4>
-                <p class="unit">Cantidad: <input type="number" id="quantity1" name="" value="2"></p>
-                <p class="btn-area"><i aria-hidden="true" class="fa fa-trash" id="delete1"></i> <span class="btn2" id="remove1">Quitar</span></p>
-              </div>
-            </div>
-            <div class="box" id="item2">
-              <img src="https://cdn.shopify.com/s/files/1/0250/7483/products/Candyfunhouse_ferrero_crunch_43g-Side-jpg-1_500x.jpg?v=1624563101">
-              <div class="content">
-                <h3>Crunch Bar - 1.55 oz</h3>
-                <h4>Precio: $69.99</h4>
-                <p class="unit">Cantidad: <input type="number" id="quantity2" name="" value="1"></p>
-                <p class="btn-area"><i aria-hidden="true" class="fa fa-trash" id="delete2"></i> <span class="btn2" id="remove2">Quitar</span></p>
-              </div>
-            </div>
-            <div class="box" id="item3">
-              <img src="https://cdn.shopify.com/s/files/1/0250/7483/products/Soda-Blasters-Fizzy-Candy-6-pack-Candy-Funhouse-Canada_500x.jpg?v=1611774092">
-              <div class="content">
-                <h3>Kidsmania Soda Can Fizzy Candy (6 pack)</h3>
-                <h4>Precio: $69.99</h4>
-                <p class="unit">Cantidad: <input type="number" id="quantity3" name="" value="0"></p>
-                <p class="btn-area"><i aria-hidden="true" class="fa fa-trash" id="delete3"></i> <span class="btn2" id="remove3">Quitar</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="right-bar">
-            <p><span>Subtotal</span> <span>$0.00</span></p>
-            <hr>
-            <p><span>IVA (16%)</span> <span>$0.00</span></p>
-            <hr>
-            <p><span>Envío</span> <span>$120</span></p>
-            <hr>
-            <p><span>Total</span> <span>$0.00</span></p><a href="#"><i class="fa fa-shopping-cart"></i>Pagar</a>
-          </div>
-        </div>
-      </div> 
+        <h3>Mi Carrito de Compra</h3>
+
+      <!-- Contenedor para centrar la tabla -->
+      <div class="table-wrapper container align-text-center">
+          <!-- Tabla con encabezados -->
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                  <tr>
+                      <th scope="col">Imagen del producto</th>
+                      <th scope="col">Nombre del producto</th>    
+                      <th scope="col">Precio</th>
+                      <th scope="col">Cantidad</th>
+                      <th scope="col">Eliminar producto</th>
+                  </tr>
+              </thead>
+              <tbody id="table-body">
+                  <!-- Aquí se muestran los productos del carrito desde el Local Storage -->
+              </tbody>
+          </table>
+      </div>
+</div>
+      <br>
+      <div class="right-bar">
+        <p><span>Subtotal</span> <span id="subtotal">$0.00</span></p>
+        <hr>
+        <p><span>IVA (16%)</span> <span id="iva">$0.00</span></p>
+        <hr>
+        <p><span>Envío</span> <span id="envio">$120</span></p>
+        <hr>
+        <p><span>Total</span> <span id="total">$0.00</span></p>
+        <a href="#"><i class="fa fa-shopping-cart"></i>Pagar</a>
+      </div>
       <br>
       <!--  Footer -->
       <footer id="footer-section"></footer>
