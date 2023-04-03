@@ -383,7 +383,7 @@ const carruselFuncion = (grupoDeElementos) => {
     //console.log("next", next);
     for (var i = 1; i < minPerSlide; i++) {
       if (!next) {
-        //
+        //  imagenProducto.srcset = '';
         next = grupoDeElementos[0];
       }
       let cloneChild = next.cloneNode(true);
