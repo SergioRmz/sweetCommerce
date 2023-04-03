@@ -52,11 +52,11 @@ for (let i = 0; i < quantities.length; i++) {
       updateCart();
     }
   });
-//Evento para quitar el producto
-removeButtons[i].addEventListener('click', function() {
-  this.parentNode.parentNode.remove();
-  updateCart();
-});
+  //Evento para quitar el producto
+  removeButtons[i].addEventListener('click', function() {
+    this.parentNode.parentNode.parentNode.remove();
+    updateCart();
+  });
 }
 
 //Llamamos a la función para actualizar los valores al cargar la página
