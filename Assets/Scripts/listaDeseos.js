@@ -1,5 +1,8 @@
 // Función para agregar un producto a la lista de deseos
+
+
 function agregarProducto(producto) {
+  console.log(producto);
   // Crea una nueva fila para la tabla
   const fila = document.createElement('tr');
 
@@ -18,16 +21,15 @@ function agregarProducto(producto) {
   // Imagen del producto
   const celdaImagen = document.createElement('td');
   const imagenProducto = document.createElement('img');
-  imagenProducto.src = '/Assets/images/Productos/gomitas.jpg';
+  imagenProducto.src = `${producto.imagenSrc}`;
   imagenProducto.alt = '';
-  imagenProducto.srcset = '';
   imagenProducto.classList.add('wishlist-img');
   celdaImagen.appendChild(imagenProducto);
   fila.appendChild(celdaImagen);
 
   // Nombre del producto
   const celdaTitulo = document.createElement('td');
-  celdaTitulo.textContent = producto.title;
+  celdaTitulo.textContent = `${producto.nombreProducto}`;
   fila.appendChild(celdaTitulo);
 
   // Precio del producto
@@ -47,44 +49,16 @@ function agregarProducto(producto) {
   boton.textContent = 'Añadir al carrito';
   boton.classList.add('btn');
   celdaBoton.appendChild(boton);
-
   fila.appendChild(celdaBoton);
 
   // Agregar la fila creada previamente a la tabla de la lista de deseos
+  tbody.appendChild(fila);
 
-  const filaCompleta = {
-    'fila' : fila,
-  };
-
-  const filaCompletaJSON = JSON.stringify(filaCompleta);
-  localStorage.setItem('filaCompleta', filaCompletaJSON);
 };
 
-// Obtener el botón con la clase "btn-fav"
-const btnFav = document.querySelector('.btn-fav');
+// Selec
+const tableBody = document.querySelector("#tbody");
+const productos = [];
+productos.push(JSON.parse(localStorage.getItem("productosDeseadosArray")));
 
-btnFav.addEventListener('click', (event) => {
-  // Previene que el enlace predeterminado se abra
-  event.preventDefault();
-
-  // Obtenemos el título y el precio del producto desde la card en productos.html
-  const title = document.querySelector('.card-title1').textContent;
-  const price = document.querySelector('.card-text1').textContent;  
-
-  const product = {
-    title,
-    price
-  };
-  // Agregar el producto a la lista de deseos
-  agregarProducto(product);
-
-});
-
-
-
-
-
-
-
-
-
+console.log(productos);
