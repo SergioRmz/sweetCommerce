@@ -5,154 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend&display=swap"
+    rel="stylesheet"
+  />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../Assets/Components/NavBar/NavBar.css" />
-    <link rel="stylesheet" href="/Assets/Styles/Carrito.css" />
+    <link rel="stylesheet" href="../Assets/Components/Footer/footer.css" />
+    <link rel="stylesheet" href="/Assets/Styles/carrito.css" />
 </head>
-<body>
-    <section id="sectionContainer" class="container">
-        <header class="" id="header">
-          <nav id="navBar-partOne" class="navbar navbar-expand-lg bg-body-tertiary">
-            <div id="navBar-partOne-item" class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img id="sweetLogo" src="/Assets/images/Sweet.png" alt="Logo" class="d-inline-block align-text-center">
-              </a>
-    
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <form class="d-flex " role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success bg-info-subtle border-light-subtle text-info-emphasis"
-                    type="submit">Search</button>
-                </form>
-    
-    
-                <div class="container">
-                  <ul class="nav justify-content-end">
-                    <li class="nav-item collapseItem">
-                      <a class="nav-link active" aria-current="page" href="#">
-                        <img class="img-fluid" src="/Assets/icons/icons8-usuario-masculino-en-círculo-48.png" alt="">
-                      </a>
-                    </li>
-                    <li class="nav-item collapseItem">
-                      <a class="nav-link " href="#">
-                        <img class="img-fluid" src="/Assets/icons/icons8-me-gusta-48.png" alt="">
-                      </a>
-                    </li>
-                    <li class="nav-item collapseItem">
-                      <a class="nav-link disabled">
-                        <img src="/Assets/icons/icons8-carrito-de-la-compra-cargado-48.png" alt=""></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-    
-    <!-- Elementos que aparecen al colapsar-->
-    
-              <a class="nav-link navbar-toggler  border border-0 p-0" href="#" type="link" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span><img id="iconSearch" class=" icons" src="/Assets/icons/icons8-busca-mas-48.png" alt=""></span>
-              </a>
-    
-              <a class="nav-link navbar-toggler border border-0 p-0" href="#" type="link" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <img id="iconUser" class=" icons" src="/Assets/icons/icons8-usuario-masculino-en-círculo-48.png" alt="">
-              </a>
-              <a class="nav-link navbar-toggler border border-0 p-0" href="#" type="link" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <img id="iconMeEncanta" class=" icons" src="/Assets/icons/icons8-me-gusta-48.png" alt="">
-              </a>
-              <a class="nav-link navbar-toggler border border-0 p-0" href="#" type="link" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <img id="iconCarrito" class=" icons" src="/Assets/icons/icons8-carrito-de-la-compra-cargado-48.png" alt="">
-              </a>
-    
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-    
-            </div>
-    
-          </nav>
-    
-          <nav id="navBar-partTwo" class="navbar navbar-expand-lg bg-body-tertiary ">
-            <div id="navBar-partTwo-item" class="container-fluid ">
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Dulces</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Chocolate</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Bebidas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Snacks</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Caja Misteriosa</a>
-                  </li>
-                </ul>
-              </div>
-          </nav>
-        </header>
-    
-      </section>
+<body onload="script(Carrito.js);">
+
+  <div>
+        <!-- div para navbar -->
+        <header id="navBarSection"></header> 
+    </div>
 
      <!-- Container del Carrito -->
 
+     <main>
       <div class="container">
-        <h1>Mi Carrito de Compra</h1>
-        <div class="project">
-          <div class="shop">
-            <div class="box" id="item1">
-              <img src="https://cdn.shopify.com/s/files/1/0250/7483/products/cheetos-mac-n-cheese-flamin-hot-flavour-limited-edition-candy-funhouse_500x.jpg?v=1601043287">
-              <div class="content">
-                <h3>Cheetos Mac'n Cheese - Flamin' Hot - 5.6oz</h3>
-                <h4>Precio: $79.99</h4>
-                <p class="unit">Cantidad: <input type="number" id="quantity1" name="" value="2"></p>
-                <p class="btn-area"><i aria-hidden="true" class="fa fa-trash" id="delete1"></i> <span class="btn2" id="remove1">Quitar</span></p>
-              </div>
-            </div>
-            <div class="box" id="item2">
-              <img src="https://cdn.shopify.com/s/files/1/0250/7483/products/Candyfunhouse_ferrero_crunch_43g-Side-jpg-1_500x.jpg?v=1624563101">
-              <div class="content">
-                <h3>Crunch Bar - 1.55 oz</h3>
-                <h4>Precio: $69.99</h4>
-                <p class="unit">Cantidad: <input type="number" id="quantity2" name="" value="1"></p>
-                <p class="btn-area"><i aria-hidden="true" class="fa fa-trash" id="delete2"></i> <span class="btn2" id="remove2">Quitar</span></p>
-              </div>
-            </div>
-            <div class="box" id="item3">
-              <img src="https://cdn.shopify.com/s/files/1/0250/7483/products/Soda-Blasters-Fizzy-Candy-6-pack-Candy-Funhouse-Canada_500x.jpg?v=1611774092">
-              <div class="content">
-                <h3>Kidsmania Soda Can Fizzy Candy (6 pack)</h3>
-                <h4>Precio: $69.99</h4>
-                <p class="unit">Cantidad: <input type="number" id="quantity3" name="" value="0"></p>
-                <p class="btn-area"><i aria-hidden="true" class="fa fa-trash" id="delete3"></i> <span class="btn2" id="remove3">Quitar</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="right-bar">
-            <p><span>Subtotal</span> <span>$0.00</span></p>
-            <hr>
-            <p><span>IVA (16%)</span> <span>$0.00</span></p>
-            <hr>
-            <p><span>Envío</span> <span>$120</span></p>
-            <hr>
-            <p><span>Total</span> <span>$0.00</span></p><a href="#"><i class="fa fa-shopping-cart"></i>Pagar</a>
-          </div>
-        </div>
-      </div> 
+        <h3>Mi Carrito de Compra</h3>
 
- <script src="/Assets/Scripts/Carrito.js"></script> 
+      <!-- Contenedor para centrar la tabla -->
+      <div class="table-wrapper container align-text-center">
+          <!-- Tabla con encabezados -->
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                  <tr>
+                      <th scope="col">Imagen del producto</th>
+                      <th scope="col">Nombre del producto</th>    
+                      <th scope="col">Precio</th>
+                      <th scope="col">Cantidad</th>
+                      <th scope="col">Eliminar producto</th>
+                  </tr>
+              </thead>
+              <tbody id="table-body">
+                  <!-- Aquí se muestran los productos del carrito desde el Local Storage -->
+              </tbody>
+          </table>
+      </div>
+</div>
+      <br>
+      <div class="right-bar">
+        <p><span>Subtotal</span> <span id="subtotal">$0.00</span></p>
+        <hr>
+        <p><span>IVA (16%)</span> <span id="iva">$0.00</span></p>
+        <hr>
+        <p><span>Envío</span> <span id="envio">$120</span></p>
+        <hr>
+        <p><span>Total</span> <span id="total">$0.00</span></p>
+        <a href="#"><i class="fa fa-shopping-cart"></i>Pagar</a>
+      </div>
+      <br>
+      </main>
+      <!--  Footer -->
+      <footer id="footer-section"></footer>
+
+<script src="/Assets/Scripts/carrito.js"></script> 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
 crossorigin="anonymous"></script>
+<script src="/Assets/Scripts/js/jquery-3.3.1.min.js"></script>
+<script src="/Assets/Scripts/js/jquery-migrate-3.0.0.min.js"></script>
+<script src="/Assets/Scripts/home.js"></script>
 </body>
 
 </html>

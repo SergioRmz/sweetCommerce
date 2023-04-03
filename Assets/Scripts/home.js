@@ -227,31 +227,50 @@ const productosArray = [
   },
 ];
 
-const productosCarritoArray = [];
+let parsedproductosArray;
+let productosDeseadosArray;
+let productosCarritoArray;
 
-const productosDeseadosArray = [];
-/**convierte el arrglo en un json y lo convierte en una cadena  */
-const productosArrayJson = JSON.stringify(productosArray);
-/**La sigueinte line lo guarda en Localstorage, debes inditar el nombre con el que guardas el objeto que debe ser siempre en string */
-localStorage.setItem("productosArray", productosArrayJson);
+const obtenerListaProductos = () => {
+  if (localStorage.getItem("productosArray") == null) {
+    const productosArrayJson = JSON.stringify(productosArray);
+    localStorage.setItem("productosArray", productosArrayJson);
+  } else {
+    const productosArrayStr = localStorage.getItem("productosArray");
+    parsedproductosArray = JSON.parse(productosArrayStr);
+  }
+}
 
-/*** */
-const productosCarritoArrayJson = JSON.stringify(productosCarritoArray);
 
-localStorage.setItem("productosCarritoArray", productosCarritoArrayJson);
+const obtenerListaCarrito = () => {
+  if (localStorage.getItem("productosCarritoArray") == null) {
+    productosCarritoArray = [];
+    const productosCarritoArrayJson = JSON.stringify(productosCarritoArray);
+    localStorage.setItem("productosCarritoArray", productosCarritoArrayJson);
+  } else {
+    const productosCarritoArrayStr = localStorage.getItem("productosCarritoArray");
+    productosCarritoArray = JSON.parse(productosCarritoArrayStr);
+  }
 
+  console.log("productosCarritoArray", productosCarritoArray);
+}
 
-const productosDeseadosArrayJson = JSON.stringify(productosDeseadosArray);
+const obtenerListaDeseado = () => {
+  if (localStorage.getItem("productosDeseadosArray") == null) {
+    productosDeseadosArray = [];
+    const productosDeseadosArrayJson = JSON.stringify(productosDeseadosArray);
+    localStorage.setItem("productosDeseadosArray", productosDeseadosArrayJson);
+  } else {
+    const productosDeseadosArrayStr = localStorage.getItem("productosDeseadosArray");
+    productosDeseadosArray = JSON.parse(productosDeseadosArrayStr);
+  }
 
-localStorage.setItem("productosDeseadosArray", productosDeseadosArrayJson);
+  console.log("productosDeseadosArray", productosDeseadosArray);
+}
 
-/**Para recuperarlo: obtien json del local estorage utilizando el identificador que se le dio */
-const productosArrayStr = localStorage.getItem("productosArray");
-
-/**Para convertir el json en el objeto original */
-const parsedproductosArray = JSON.parse(productosArrayStr);
-
-//console.log(parsedproductosArray);
+obtenerListaProductos();
+obtenerListaCarrito();
+obtenerListaDeseado();
 
 const createCard = (carouselId, carouselItemClass, elementArray) => {
   const carruselPopular = document.getElementById(carouselId);
@@ -270,9 +289,34 @@ const createCard = (carouselId, carouselItemClass, elementArray) => {
       `<div class="${carouselItemClass}${isActive}">` +
       '<div class="col-md-3"><div class="card h-100">' +
       "<!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->" +
-      '<div class="card-header bg-transparent">' +
-      `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList" width="30px"/></a>` +
-      "</div>" +
+      '<div class="card-header bg-transparent">';
+
+
+    if (productosDeseadosArray == null || productosDeseadosArray.length == 0) {
+      carouselItemsHTML =
+        carouselItemsHTML + `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="/Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
+      banderaDeseadoImg = true;
+    } else {
+      let banderaDeseadoImg = false;
+      let countImg = 0;
+      productosDeseadosArray.forEach((elementDeseado, index, arr) => {
+        if ((elementDeseado.id == element.id) && banderaDeseadoImg == false) {
+          carouselItemsHTML =
+            carouselItemsHTML + `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="deseado" src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList" width="30px"/></a>`;
+          banderaDeseadoImg = true;
+        }
+        countImg++;
+        if ((arr.length == countImg) && (banderaDeseadoImg == false)) {
+          carouselItemsHTML =
+            carouselItemsHTML + `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="/Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
+        }
+      });
+
+      banderaDeseadoImg = false;
+    }
+
+    carouselItemsHTML =
+      carouselItemsHTML + "</div>" +
       "<img " +
       'class="card-img-top W-100"' +
       `src="${element.imagenSrc}"` +
@@ -320,14 +364,15 @@ const createCard = (carouselId, carouselItemClass, elementArray) => {
 
   console.log(carruselPopular);
 };
+
 const seleccionProductos = () => {
   const productoPopularesArray = [];
   const productoNuevosArray = [];
-  for (const key in productosArray) {
-    if (productosArray[key].popular) {
-      productoPopularesArray.push(productosArray[key]);
-    } else if (productosArray[key].nuevo) {
-      productoNuevosArray.push(productosArray[key]);
+  for (const key in parsedproductosArray) {
+    if (parsedproductosArray[key].popular) {
+      productoPopularesArray.push(parsedproductosArray[key]);
+    } else if (parsedproductosArray[key].nuevo) {
+      productoNuevosArray.push(parsedproductosArray[key]);
     }
   }
 
@@ -344,6 +389,7 @@ const seleccionProductos = () => {
     "carousel-item populares2Item categoriaItem justify-content-center";
   createCard(carouselNuevosId, carouselItemNuevos, productoNuevosArray);
 };
+
 seleccionProductos();
 
 let categoriasItems = document.querySelectorAll(
@@ -361,7 +407,7 @@ const carruselFuncion = (grupoDeElementos) => {
   grupoDeElementos.forEach((el) => {
     const minPerSlide = 4;
     let next = el.nextElementSibling;
-    console.log("next", next);
+    //console.log("next", next);
     for (var i = 1; i < minPerSlide; i++) {
       if (!next) {
         //
@@ -376,33 +422,33 @@ const carruselFuncion = (grupoDeElementos) => {
 carruselFuncion(categoriasItems);
 carruselFuncion(popularesItems);
 carruselFuncion(populares2Items);
-/**creo una funcion que recibe el objetoHTML que se presiono o recibio el evento, con la intencion de recuperar el id del producto al que pertenece,
- *  ademàs recibirá el tipo representativo si se guarda en el carrito o en la lista de deseados 
+/**Se crea una funcion que recibe el objeto HTML que recibio el evento, con la intencion de recuperar el ID del producto al que pertenece,
+ *  además recibirá el tipo representativo de si se guarda en el carrito o en la lista de deseados 
  */
 const guardar = (objetoHTML, guardarTipo) => {
 
-  console.log(objetoHTML.id.substring(0, objetoHTML.id.indexOf("_")));
-/**Con el fin de recuperar la lista de productos se obtine el arreglo del locastorage */
+  const id = objetoHTML.id.substring(0, objetoHTML.id.indexOf("_"));
+  /**Con el fin de recuperar la lista de productos se obtiene el arreglo del localStorage */
   const productosArrayStr = localStorage.getItem("productosArray");
   const parsedproductosArray = JSON.parse(productosArrayStr);
-/***El condicional sirve para identificar si se guarda en el carrito es 1 si se guarda en la lista de deseadod es 2 */
+  /***El condicional sirve para identificar si se guarda en el carrito o en la lista de deseados; Carrito: 1, Lista de deseados; 2*/
   if (guardarTipo == 1) {
-    /**Se obtiete el arrglo del carrito en localstorage  */
+    /**Se obtiene el arrglo del carrito en localStorage  */
     const productosCarritoArrayStr = localStorage.getItem("productosCarritoArray");
     const parsedproductosCarritoArray = JSON.parse(productosCarritoArrayStr);
-/*Recorrede el arrglo del productos que se recupero del localstorage  */
+    /*Recorre el arreglo de productos que se recupero del localStorage  */
     parsedproductosArray.forEach(element => {
-      /*se comparan los ids de los productos del arrglo con el id que se obtuvodel elemento html que recibio el evento,
+      /*se comparan los IDs de los productos del arreglo con el ID que se obtuvo del elemento HTML que recibio el evento,
        el cual se obtiene al utilizar la funcion substring del indice 0 del string del id del elemento hasta el indice 
        en el que se encuentra un guion bajo
        */
-      if (element.id == parseInt(objetoHTML.id.substring(0, objetoHTML.id.indexOf("_")))) {
+      if (element.id == parseInt(id)) {
         /**Una vez encontrado el producto con el ID correspondiente se agrega al arreglo del carrito */
         parsedproductosCarritoArray.push(element);
         console.log("El elegido carrito", element);
       }
     });
-/**Se toma el arreglo creado con el producto que se acaba de ingresar y se vuelve a guardar en el localStorage */
+    /**Se toma el arreglo creado con el producto que se acaba de ingresar y se vuelve a guardar en el localStorage */
     const productosCarritoArrayJson = JSON.stringify(parsedproductosCarritoArray);
     localStorage.setItem("productosCarritoArray", productosCarritoArrayJson);
 
@@ -410,21 +456,50 @@ const guardar = (objetoHTML, guardarTipo) => {
     const parsedproductosCarritoArray2 = JSON.parse(productosCarritoArrayStr2);
     console.log("LocalStorage Carrito", parsedproductosCarritoArray2);
   } else if (guardarTipo == 2) {
-    const productosDeseadosArrayStr = localStorage.getItem("productosDeseadosArray");
-    const parsedproductosDeseadosArray = JSON.parse(productosDeseadosArrayStr);
+    console.log("document.getElementById(`${id}_deseadoImg`).name", document.getElementById(`${id}_deseadoImg`).name);
+    if (document.getElementById(`${id}_deseadoImg`).name == "deseado") {
+      eliminarDeseado(objetoHTML);
+    } else {
 
-    parsedproductosArray.forEach(element => {
-      if (element.id == parseInt(objetoHTML.id.substring(0, objetoHTML.id.indexOf("_")))) {
-        parsedproductosDeseadosArray.push(element);
-        console.log("El elegido deseado", element);
-      }
-    });
+      parsedproductosArray.forEach(element => {
+        if (element.id == parseInt(id)) {
+          productosDeseadosArray.push(element);
+          console.log("El elegido deseado", element);
 
-    const productosDeseadosArrayJson = JSON.stringify(parsedproductosDeseadosArray);
-    localStorage.setItem("productosDeseadosArray", productosDeseadosArrayJson);
+          document.getElementById(`${id}_deseadoImg`).name = "deseado";
+          document.getElementById(`${id}_deseadoImg`).src = "/Assets/images/Icons/icons8-me-gusta-48.png";
+          console.log("document.getElementById(`${id}_deseado`)", document.getElementById(`${id}_deseado`));
+        }
+      });
 
-    const productosDeseadosArrayStr2 = localStorage.getItem("productosDeseadosArray");
-    const parsedproductosDeseadosArray2 = JSON.parse(productosDeseadosArrayStr2);
-    console.log("LocalStorage deseado", parsedproductosDeseadosArray2);
+      const productosDeseadosArrayJson = JSON.stringify(productosDeseadosArray);
+      localStorage.setItem("productosDeseadosArray", productosDeseadosArrayJson);
+
+      const productosDeseadosArrayStr2 = localStorage.getItem("productosDeseadosArray");
+      const parsedproductosDeseadosArray2 = JSON.parse(productosDeseadosArrayStr2);
+      console.log("LocalStorage deseado", parsedproductosDeseadosArray2);
+    }
   }
+}
+
+
+const eliminarDeseado = (objetoHTML) => {
+  console.log("Entro?");
+  const id = objetoHTML.id.substring(0, objetoHTML.id.indexOf("_"));
+
+  productosDeseadosArray.forEach(element => {
+    if (element.id == parseInt(id)) {
+      const index = productosDeseadosArray.indexOf(element);
+      productosDeseadosArray = productosDeseadosArray.filter(e => productosDeseadosArray.indexOf(e) != index);
+
+      document.getElementById(`${id}_deseadoImg`).name = "noDeseado";
+      document.getElementById(`${id}_deseadoImg`).src = "/Assets/images/Icons/icons8-me-gusta_no_background-48.png";
+      console.log("document.getElementById(`${id}_deseado`)", document.getElementById(`${id}_deseado`));
+    }
+  });
+
+  const productosDeseadosArrayJson = JSON.stringify(productosDeseadosArray);
+  localStorage.setItem("productosDeseadosArray", productosDeseadosArrayJson);
+
+  console.log(JSON.parse(localStorage.getItem("productosDeseadosArray")));
 }
