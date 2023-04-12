@@ -1,18 +1,323 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="/Assets/Components/NavBar/NavBar.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Assets/Components/NavBar/NavBar.css" />
+    <link rel="stylesheet" href="/Assets/Styles/productos.css" />
+    <link rel="stylesheet" href="../Assets/Components/Footer/footer.css" />
+    <link rel="stylesheet" href="/Assets/Styles/home.css" />
+    <title>SweetCommerce</title>
   </head>
-  <body>
-       
-    
-    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <body onload="script(home.js);">
+    <!-- Navbar se divide en 2 secciones parte 1 y parte 2 -->
+    <header id="navBarSection"></header>
+
+    <main id="" class="container-fluid ps-0 pe-0 pt-0">
+      <!--Seccion 1: Carousel home anuncios -->
+      <!-- Carrusel 1: ANUNCIOS/PROMOCIONES-->
+      <section id="carousel" class="container-fluid">
+        <div id="carouselCaptions" class="carousel slide ps-lg-4 pe-lg-4 pt-0">
+          <!-- Sección de botones -->
+          <div id="buttonsSection" class="carousel-indicators">
+            <!-- Botones lineal 1 -->
+            <button
+              type="button"
+              data-bs-target="#carouselCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <!-- Botones lineal 2 -->
+            <button
+              type="button"
+              data-bs-target="#carouselCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <!-- Botones lineal 3 -->
+            <button
+              type="button"
+              data-bs-target="#carouselCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <!-- Botones lineal 4 -->
+            <button
+              type="button"
+              data-bs-target="#carouselCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+
+          <div id="imageSection" class="carousel-inner">
+            <!-- Imagen 1 -->
+            <div class="carousel-item active">
+              <a href="/Pages/misteryBox.html"><img
+                src="/Assets/Images/Carousel/Caja.png"
+                class="d-block w-100"
+                alt="..."
+              /></a>
+              <div class="carousel-caption d-none d-md-block">
+                 <!-- Aquí se puede colocar una descripción -->
+              </div>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="carousel-item">
+              <a href="/Pages/productos.html"><img
+                src="/Assets/Images/Carousel/Choco.png"
+                class="d-block w-100"
+                alt="..."
+              /></a>
+              <div class="carousel-caption d-none d-md-block">
+                <!-- Aquí se puede colocar una descripción -->
+              </div>
+            </div>
+            <!-- Imagen 3 -->
+            <div class="carousel-item">
+              <a href="/Pages/snacks.html"><img
+                src="./Assets/images/Carousel/Snacks.png"
+                class="d-block w-100"
+                alt="..."
+              /></a>
+              <div class="carousel-caption d-none d-md-block">
+                <!-- Aquí se puede colocar una descripción -->
+              </div>
+            </div>
+          </div>
+          <!-- Botones flechas -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <!-- El texto de la etiqueta esta oculta -->
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!--Seccion 2: Carrusel de categorias -->
+      <section id="" class="container-fluid">
+        <!-- Sección de etiquetas los populares y ver más -->
+        <div id="" class="homeEtiquetas justify-content-start p-4">
+          <h1 id="headlineSection">Categorías</h1>
+        </div>
+
+        <div class="container-fluid text-center my-3">
+          <div class="row mx-auto my-auto">
+            <div
+              id="categoriasCarousel"
+              class="carousel carruselCustom justify-content-center slide"
+              data-bs-ride="carousel"
+            >
+              <div
+                class="carousel-inner carruselInner justify-content-center"
+                role="listbox"
+              >
+                <!--  -->
+                <div
+                  class="carousel-item popularesCategoriaItem categoriaItem justify-content-center active"
+                >
+                  <a class="colCategoria col-md-3" href="/Pages/misteryBox.html">
+                    <div class="card cardCategoria">
+                      <div class="card-img">
+                        <img
+                          src="./Assets/images/PopularCategorias/Caja-Cat.png"
+                          class="img-fluid categoriaCardImg"
+                        />
+                      </div>
+                      <div class="card-img-overlay"></div>
+                    </div>
+                  </a>
+                </div>
+                <!--  -->
+                <div
+                  class="carousel-item popularesCategoriaItem categoriaItem justify-content-center"
+                >
+                  <a class="colCategoria col-md-3" href="/Pages/bebidas.html">
+                    <div class="card cardCategoria">
+                      <div class="card-img">
+                        <img
+                          src="./Assets/images/PopularCategorias/bebidas-cat.png"
+                          class="img-fluid categoriaCardImg"
+                        />
+                      </div>
+                      <div class="card-img-overlay"></div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="carousel-item popularesCategoriaItem categoriaItem justify-content-center"
+                >
+                  <a class="colCategoria col-md-3" href="/Pages/snacks.html">
+                    <div class="card cardCategoria">
+                      <div class="card-img">
+                        <img
+                          src="./Assets/images/PopularCategorias/Cat_Snacks.png"
+                          class="img-fluid categoriaCardImg"
+                        />
+                      </div>
+                      <div class="card-img-overlay"></div>
+                    </div>
+                  </a>
+                </div>
+                <!--  -->
+                <div
+                  class="carousel-item popularesCategoriaItem categoriaItem justify-content-center"
+                >
+                  <a class="colCategoria col-md-3" href="/Pages/productos.html">
+                    <div class="card cardCategoria">
+                      <div class="card-img">
+                        <img
+                          src="./Assets/images/PopularCategorias/Choco-Cat.png"
+                          class="img-fluid categoriaCardImg"
+                        />
+                      </div>
+                      <div class="card-img-overlay"></div>
+                    </div>
+                  </a>
+                </div>
+                <!--  -->
+                <div
+                  class="carousel-item popularesCategoriaItem categoriaItem justify-content-center"
+                ><a class="colCategoria col-md-3 " href="/Pages/dulces.html">
+                  
+                    <div class="card cardCategoria">
+                      <div class="card-img">
+                        <img
+                          src="./Assets/images/PopularCategorias/Dulces-cat.png"
+                          class="img-fluid categoriaCardImg"
+                        />
+                      </div>
+                      <div class="card-img-overlay"></div>
+                    </div>
+                  
+                </a>
+                </div>
+                <!--  -->
+                <!-- <div class="carousel-item popularesCategoriaItem categoriaItem justify-content-center ">
+                  <div class="colCategoria col-md-3">
+                    <div class="card cardCategoria">
+                      <div class="card-img ">
+                        <img src="/Assets/Images/PopularCategorias/" class="img-fluid categoriaCardImg">
+                      </div>
+                      <div class="card-img-overlay"></div>
+                    </div>
+                  </div>
+                </div> -->
+                <!--  -->
+              </div>
+              <a
+                class="carousel-control-prev bg-transparent w-aut"
+                href="#categoriasCarousel"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                class="carousel-control-next bg-transparent w-aut"
+                href="#categoriasCarousel"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Carrusel 3: PRODUCTOS POPULARES-->
+      <!-- Sección: productos populares (cards) -->
+      <section class="container-fluid">
+        <div id="" class="homeEtiquetas d-flex justify-content-start p-4">
+          <h1 id="headlineSection2">Los más populares</h1>
+        </div>
+
+        <div class="container-fluid text-center my-3">
+          <div class="row mx-auto my-auto">
+            <div
+              id="popularesCarousel"
+              class="carousel carruselCustom slide"
+              data-bs-ride="carousel"
+            >
+              <!-- El contenido de este carrusel se crea con Javascript de manera dinamica -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Carrusel 4: PRODUCTOS NUEVOS-->
+      <!--  -->
+      <section class="container-fluid">
+        <div id="" class="homeEtiquetas d-flex justify-content-between p-4">
+          <h1 id="headlineSection3">Nuevos productos</h1>
+        </div>
+        <div class="container-fluid text-center my-3">
+          <div class="row mx-auto my-auto justify-content-center">
+            <div
+              id="populares2Carousel"
+              class="carousel carruselCustom slide"
+              data-bs-ride="carousel"
+            >
+              <!-- El contenido de este carrusel se crea con Javascript de manera dinamica -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección 4: productos (cards) -->
+<div>
+  <div id="div_Productos"></div>
+</div>
+      <!--  -->
+    </main>
+    <footer id="footer-section"></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="/Assets/Components/HomeComponets/categoriasPopularesHome.html"></script> -->
+
+    <script src="/Assets/Scripts/js/jquery-3.3.1.min.js"></script>
+    <script src="./Assets/Scripts/js/jquery-3.3.1.min.js"></script>
+    <script src="./Assets/Scripts/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="./Assets/Scripts/categoriasPopularesHome.js"></script>
+    <script src="./Assets/Scripts/home.js"></script>
   </body>
 </html>

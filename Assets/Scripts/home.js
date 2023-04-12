@@ -357,28 +357,20 @@ const seleccionProductos = (jsonFromDb) => {
       productoNuevosArray.push(jsonFromDb[key]);
     }else
     if(jsonFromDb[key].categoria == 1){
-
-
+      dulcesArray.push(jsonFromDb[key]);
     }
     else
     if(jsonFromDb[key].categoria == 2){
-
-
-    
+      chocolatesArray.push(jsonFromDb[key]);
     }else
     if(jsonFromDb[key].categoria == 3){
-
-
-    
+      bebidasArray.push(jsonFromDb[key]); 
     }else
     if(jsonFromDb[key].categoria == 4){
-
-
-    
+      snacksArray.push(jsonFromDb[key]);
     }else
     if(jsonFromDb[key].categoria == 5){
-
-
+      cajasArray.push(jsonFromDb[key]); 
     }
   }
 
