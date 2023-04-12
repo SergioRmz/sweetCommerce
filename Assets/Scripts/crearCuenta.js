@@ -21,3 +21,5 @@ botonCC.addEventListener('click', () => {
   window.open('/Pages/login.html', '_blank');
   
 });
+
+//coment
