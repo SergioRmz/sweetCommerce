@@ -13,10 +13,10 @@ const createCarrito = () => {
       carritoHTML +
       `<tr id="${element.id}_carritoLista">` +
       '<td>' +
-      `<img class="cart-img" src="${element.imagenSrc}" alt="">` +
+      `<img class="cart-img" src="${element.imagen_Src}" alt="">` +
       '</td>' +
       '<td>' +
-      `${element.nombreProducto}` +
+      `${element.nombre_Producto}` +
       '</td>' +
       '<td>' +
       `$${element.precio}` +
