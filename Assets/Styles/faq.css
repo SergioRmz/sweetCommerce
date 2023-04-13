@@ -4,11 +4,11 @@ body{
 
 .btn{
     height: 70px;
-    background-color: #590696;
+    background-color: #590696 !important;
 }
 
 .btn:hover{
-    background-color: #ff6fb5;
+    background-color: #ff6fb5 !important;
 
 }
 
@@ -21,12 +21,12 @@ body{
 }
 
 .faq-title{
-    background-color: #ff6fb5;
+    background-color: #ff6fb5 ;
     color: white;
 }
 
 .faq-contact{
-    background-color:#ff6fb5;
+    background-color:#ff6fb5 !important;
     color:white;
 }
 
@@ -39,7 +39,7 @@ body{
 }
 
 .contact-button{
-    background-color: white;
+    background-color: white !important;
 }
 
 
