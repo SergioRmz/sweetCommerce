@@ -201,7 +201,7 @@ const createCarousel= (carouselId, carouselItemClass, elementArray) => {
       'width=""/>' +
       '<div class="card-body">' +
       `<h5 class="card-title">${element.nombre_Producto}</h5>` +
-      `<p class="card-text">$${element.precio}</p>` +
+      `<p class="card-text">${element.precio}</p>` +
       "</div>" +
       "<!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->" +
       '<div class="card-footer bg-transparent">' +
@@ -229,7 +229,7 @@ const createCarousel= (carouselId, carouselItemClass, elementArray) => {
     " </a>" +
     "<a " +
     'class="carousel-control-next bg-transparent w-aut"' +
-    ' href="#popularesCarousel"' +
+     `href="#${carouselId}" `+
     ' role="button"' +
     ' data-bs-slide="next"' +
     ">" +
