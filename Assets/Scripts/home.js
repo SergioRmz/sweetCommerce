@@ -164,7 +164,7 @@ const createCarousel= (carouselId, carouselItemClass, elementArray) => {
     carouselItemsHTML =
       carouselItemsHTML +
       `<div class="${carouselItemClass}${isActive}">` +
-      '<div class="col-md-3"><div class="card  ">' +
+      '<div class="col-md-3"><div class="card  h-100">' +
       "<!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->" +
       '<div class="card-header bg-transparent">';
 
