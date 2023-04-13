@@ -82,4 +82,15 @@ window.addEventListener("load", function () { //cuando se cargue la página
 });
 
 
-
+const seleccionProductos = () => {
+  const productoCategoria1 = [];
+  const productoCategoria2 = [];
+  for (const key in parsedproductosArray) {
+    if (parsedproductosArray[key].popular) {
+      productoPopularesArray.push(parsedproductosArray[key]);
+    } else if (parsedproductosArray[key].nuevo) {
+      productoNuevosArray.push(parsedproductosArray[key]);
+    }
+  }
+}
+  console.log("populares", productoPopularesArray);
