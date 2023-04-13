@@ -1,7 +1,4 @@
 
-
-
-
 /**Para recuperarlo: obtien json del local estorage utilizando el identificador que se le dio */
 const productosDeseadosArrayStr = localStorage.getItem("productosDeseadosArray");
 
@@ -23,7 +20,7 @@ const createListaDeseados = () => {
             listaDeseadosHTML +
             `<tr id="${element.id}_deseadoLista">` +
             '<td>' +
-            `<a id="${element.id}_deseadoEliminar" onclick="eliminarDeseado(this)"  href="#" class="btn"><img class="remove-button" src="../Assets/images/Icons/icons8-eliminar-30.png" alt="boton-eliminar"></a>` +
+            `<a id="${element.id}_deseadoEliminar" onclick="eliminarDeseado(this)"  href="#" class="btn"><img class="remove-button" src="./Assets/images/Icons/icons8-eliminar-30.png" alt="boton-eliminar"></a>` +
             '</td>' +
             '<td>' +
             `<img class="wishlist-img" src=".${element.imagen_Src}" alt="">` +

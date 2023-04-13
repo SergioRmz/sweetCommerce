@@ -1,5 +1,4 @@
 /** Para recuperar la lista de productos del carrito desde el localStorage: */
-
 const productosCarritoArrayStr = localStorage.getItem("productosCarritoArray");
 const parsedproductosCarritoArray = JSON.parse(productosCarritoArrayStr);
 
@@ -13,7 +12,7 @@ const createCarrito = () => {
       carritoHTML +
       `<tr id="${element.id}_carritoLista">` +
       '<td>' +
-      `<img class="cart-img" src="${element.imagen_Src}" alt="">` +
+      `<img class="cart-img" src=".${element.imagen_Src}" alt="">` +
       '</td>' +
       '<td>' +
       `${element.nombre_Producto}` +
@@ -25,7 +24,7 @@ const createCarrito = () => {
       `<input class="cart-quantity" type="number" id="${element.id}_cantidad" min="1" max="${element.existencias}" value="${element.cantidad || 1}" onchange="actualizarCarrito(this)">` +
       '</td>' +
       '<td>' +
-      `<a id="${element.id}_carritoEliminar" onclick="eliminarDelCarrito(this)" href="#" class="btn"><img class="remove-button" src="../Assets/images/Icons/icons8-eliminar-30.png" alt="boton-eliminar"></a>` +
+      `<a id="${element.id}_carritoEliminar" onclick="eliminarDelCarrito(this)" href="#" class="btn"><img class="remove-button" src="./Assets/images/Icons/icons8-eliminar-30.png" alt="boton-eliminar"></a>` +
       '</td>' +
       '</tr>';
   }
