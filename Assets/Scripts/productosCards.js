@@ -96,6 +96,7 @@ const createCard = (categoria, object ) => {
   
     console.log("Dulce", dulcesArray);
     createCard(1, dulcesArray);
+    createCard(2, chocolatesArray);
     console.log("nuevos");
 
   
