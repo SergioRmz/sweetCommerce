@@ -1,7 +1,7 @@
 body,main{
     background-color: #f6f6f6;
     
-    /* font-family: 'Lexend', sans-serif; */
+    font-family: 'Lexend', sans-serif;
 }
 
 .colCategoria {
@@ -61,10 +61,10 @@ body,main{
 
 .homeEtiquetas{
     color: #FF6FB5;
-    font-family: 'Lexend', sans-serif;
+    /* font-family: 'Lexend', sans-serif; */
     text-shadow: 2px 2px 5px #5a06969d;
 
-    /* font-family: 'Fredoka One', cursive; */
+    font-family: 'Fredoka One', cursive;
     
 }
 #homeButton{

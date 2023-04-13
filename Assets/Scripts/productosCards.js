@@ -1,4 +1,8 @@
-'use strict'
+'use strict';
+$(function () {
+    $("#navBarSection").load("./Assets/Components/NavBar/NavBar.html");
+    $("#footer-section").load("./Assets/Components/Footer/footer.html");
+  });
 
 console.log("hola desde productos cards");
 let productosDeseadosArray;
@@ -22,26 +26,26 @@ const createCard = (categoria, object ) => {
         <div class="card-header bg-transparent">`;
         let banderaDeseadoImg;
   if (productosDeseadosArray == null || productosDeseadosArray.length == 0) {
-    innerDivProductos += `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="./Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
+    innerDivProductos += `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="/Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
     banderaDeseadoImg = true;
   } else {
      banderaDeseadoImg = false;
     let countImg = 0;
     productosDeseadosArray.forEach((elementDeseado, index, arr) => {
       if ((elementDeseado.id == element.id) && banderaDeseadoImg == false) {
-        innerDivProductos +=`<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="deseado" src="./Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList" width="30px"/></a>`;
+        innerDivProductos +=`<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="deseado" src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList" width="30px"/></a>`;
         banderaDeseadoImg = true;
       }
       countImg++;
       if ((arr.length == countImg) && (banderaDeseadoImg == false)) {
-        innerDivProductos += `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="./Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
+        innerDivProductos += `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="/Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
       }
     });
   
     banderaDeseadoImg = false;
   }
   
-  innerDivProductos += ` <img class="card-img-top" src="${element.imagen_Src}" alt="Card image cap" width="">
+  innerDivProductos += ` </div><img class="card-img-top" src="${element.imagen_Src}" alt="Card image cap" width="">
   <div class="card-body">
 
     <h5 class="card-title">${element.nombre_Producto}</h5>
@@ -52,10 +56,7 @@ const createCard = (categoria, object ) => {
 
       <small class="text-muted">
         <a href="#" class="btn1">
-          <button class="add">Añadir</button>
-
-        <!-- <img src="/Assets/icons/icons8-carrito-de-la-compra-cargado-48.png" alt="AgregarCarrito" 
-          width="40px"> -->
+        <button id="${element.id}_carrito" onclick="guardar(this,1)" class="add">Añadir</button>
         </a>
 
     </small>
