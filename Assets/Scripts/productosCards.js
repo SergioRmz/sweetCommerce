@@ -1,8 +1,4 @@
 'use strict';
-$(function () {
-    $("#navBarSection").load("./Assets/Components/NavBar/NavBar.html");
-    $("#footer-section").load("./Assets/Components/Footer/footer.html");
-  });
 
 console.log("hola desde productos cards");
 let productosDeseadosArray;
