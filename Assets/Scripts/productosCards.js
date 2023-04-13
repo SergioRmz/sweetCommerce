@@ -22,19 +22,19 @@ const createCard = (categoria, object ) => {
         <div class="card-header bg-transparent">`;
         let banderaDeseadoImg;
   if (productosDeseadosArray == null || productosDeseadosArray.length == 0) {
-    innerDivProductos += `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="/Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
+    innerDivProductos += `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="./Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
     banderaDeseadoImg = true;
   } else {
      banderaDeseadoImg = false;
     let countImg = 0;
     productosDeseadosArray.forEach((elementDeseado, index, arr) => {
       if ((elementDeseado.id == element.id) && banderaDeseadoImg == false) {
-        innerDivProductos +=`<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="deseado" src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList" width="30px"/></a>`;
+        innerDivProductos +=`<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="deseado" src="./Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList" width="30px"/></a>`;
         banderaDeseadoImg = true;
       }
       countImg++;
       if ((arr.length == countImg) && (banderaDeseadoImg == false)) {
-        innerDivProductos += `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="/Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
+        innerDivProductos += `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="./Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
       }
     });
   
@@ -140,7 +140,6 @@ const createCard = (categoria, object ) => {
 
 
 const guardar = (objetoHTML, guardarTipo) => {
-    console.log(productos);
   
     const id = objetoHTML.id.substring(0, objetoHTML.id.indexOf("_"));
     /**Con el fin de recuperar la lista de productos se obtiene el arreglo del localStorage */
