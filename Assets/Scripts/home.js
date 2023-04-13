@@ -171,7 +171,7 @@ const createCarousel= (carouselId, carouselItemClass, elementArray) => {
 
     if (productosDeseadosArray == null || productosDeseadosArray.length == 0) {
       carouselItemsHTML =
-        carouselItemsHTML + `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="/Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
+        carouselItemsHTML + `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="./Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
       banderaDeseadoImg = true;
     } else {
        banderaDeseadoImg = false;
@@ -179,13 +179,13 @@ const createCarousel= (carouselId, carouselItemClass, elementArray) => {
       productosDeseadosArray.forEach((elementDeseado, index, arr) => {
         if ((elementDeseado.id == element.id) && banderaDeseadoImg == false) {
           carouselItemsHTML =
-            carouselItemsHTML + `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="deseado" src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList" width="30px"/></a>`;
+            carouselItemsHTML + `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="deseado" src="./Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList" width="30px"/></a>`;
           banderaDeseadoImg = true;
         }
         countImg++;
         if ((arr.length == countImg) && (banderaDeseadoImg == false)) {
           carouselItemsHTML =
-            carouselItemsHTML + `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="/Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
+            carouselItemsHTML + `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="./Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
         }
       });
 
@@ -353,7 +353,7 @@ const guardar = (objetoHTML, guardarTipo) => {
           console.log("El elegido deseado", element);
 
           document.getElementById(`${id}_deseadoImg`).name = "deseado";
-          document.getElementById(`${id}_deseadoImg`).src = "/Assets/images/Icons/icons8-me-gusta-48.png";
+          document.getElementById(`${id}_deseadoImg`).src = "./Assets/images/Icons/icons8-me-gusta-48.png";
           console.log("document.getElementById(`${id}_deseado`)", document.getElementById(`${id}_deseado`));
         }
       });
@@ -379,7 +379,7 @@ const eliminarDeseado = (objetoHTML) => {
       productosDeseadosArray = productosDeseadosArray.filter(e => productosDeseadosArray.indexOf(e) != index);
 
       document.getElementById(`${id}_deseadoImg`).name = "noDeseado";
-      document.getElementById(`${id}_deseadoImg`).src = "/Assets/images/Icons/icons8-me-gusta_no_background-48.png";
+      document.getElementById(`${id}_deseadoImg`).src = "./Assets/images/Icons/icons8-me-gusta_no_background-48.png";
       console.log("document.getElementById(`${id}_deseado`)", document.getElementById(`${id}_deseado`));
     }
   });
