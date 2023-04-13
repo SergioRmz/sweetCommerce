@@ -1,4 +1,6 @@
 'use strict';
+const categoria = document.querySelector('.containerProductos').id;
+console.log(categoria);
 
 console.log("hola desde productos cards");
 let productosDeseadosArray;
@@ -65,40 +67,26 @@ const createCard = (categoria, object ) => {
   console.log(div_Productos);
   };
 
-  const seleccionProductos = (jsonFromDb) => {
+  const seleccionProductos = (categoria, jsonFromDb) => {
   
 
-    const dulcesArray = [];
+    const array = [];
     const chocolatesArray = [];
     const bebidasArray = [];
     const snacksArray = [];
     const cajasArray = [];
     for (const key in jsonFromDb) {
 
-      if(jsonFromDb[key].categoria == 1){
-        dulcesArray.push(jsonFromDb[key]);
+      if(jsonFromDb[key].categoria == categoria){
+        array.push(jsonFromDb[key]);
         
-      }
-      else
-      if(jsonFromDb[key].categoria == 2){
-        chocolatesArray.push(jsonFromDb[key]);
-      }else
-      if(jsonFromDb[key].categoria == 3){
-        bebidasArray.push(jsonFromDb[key]); 
-      }else
-      if(jsonFromDb[key].categoria == 4){
-        snacksArray.push(jsonFromDb[key]);
-      }else
-      if(jsonFromDb[key].categoria == 5){
-        cajasArray.push(jsonFromDb[key]); 
       }
     }
   
-    console.log("Dulce", dulcesArray);
-    createCard(1, dulcesArray);
-    createCard(2, chocolatesArray);
+    console.log(categoria, array);
+    createCard(categoria, array);
+    //createCard(2, chocolatesArray);
     console.log("nuevos");
-
   
   };
   const obtenerListaCarrito = () => {
@@ -130,7 +118,7 @@ const createCard = (categoria, object ) => {
   
   obtenerListaCarrito();
   obtenerListaDeseado();
-  seleccionProductos(parsedproductosArray);
+  seleccionProductos(categoria, parsedproductosArray);
   
 /**Se crea una funcion que recibe el objeto HTML que recibio el evento, con la intencion de recuperar el ID del producto al que pertenece,
  *  además recibirá el tipo representativo de si se guarda en el carrito o en la lista de deseados 
