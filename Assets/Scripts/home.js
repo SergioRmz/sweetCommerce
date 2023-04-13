@@ -153,55 +153,7 @@ obtenerListaCarrito();
 obtenerListaDeseado();
 
 //Generando container para mostrar productos en las paginas de categorías
-const createCard = (categoria, element ) => {
-  const id_div_Productos = (categoria == 1)? "div_ProductosDulces": (categoria == 2)?"div_ProductosChocolates": (categoria == 3)?"div_ProductosBebidas":(categoria == 4) ? "div_ProductosSnacks":(categoria == 5) ? "div_ProductosCaja":"div_Productos";
-  const div_Productos = document.getElementById(id_div_Productos);
 
-  div_Productos.innerHTML +=`<div class="col-lg-4"><div class="card h-100"><!-- Se agrega un header a la tarjeta y se coloca icono para wishList --><div class="card-header bg-transparent">`;
-
-if (productosDeseadosArray == null || productosDeseadosArray.length == 0) {
-  div_Productos.innerHTML += `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="/Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
-  banderaDeseadoImg = true;
-} else {
-  let banderaDeseadoImg = false;
-  let countImg = 0;
-  productosDeseadosArray.forEach((elementDeseado, index, arr) => {
-    if ((elementDeseado.id == element.id) && banderaDeseadoImg == false) {
-      div_Productos.innerHTML +=`<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="deseado" src="/Assets/images/Icons/icons8-me-gusta-48.png" alt="AgregaWishList" width="30px"/></a>`;
-      banderaDeseadoImg = true;
-    }
-    countImg++;
-    if ((arr.length == countImg) && (banderaDeseadoImg == false)) {
-      div_Productos.innerHTML += `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="/Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
-    }
-  });
-
-  banderaDeseadoImg = false;
-}
-
-div_Productos.innerHTML += "</div>" +
-  "<img " +
-  'class="card-img-top W-100"' +
-  `src="${element.imagen_Src}"` +
-  'alt="Card image cap"' +
-  'width=""/>' +
-  '<div class="card-body">' +
-  `<h5 class="card-title">${element.nombre_Producto}</h5>` +
-  `<p class="card-text">$${element.precio}</p>` +
-  "</div>" +
-  "<!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->" +
-  '<div class="card-footer bg-transparent">' +
-  '<small class="text-muted">' +
-  '<a href="#" class="btn1">' +
-  `<button id="${element.id}_carrito" onclick="guardar(this,1)" class="add">Añadir</button></a>` +
-  "</small>" +
-  "</div>" +
-  "</div>" 
-
- 
-
-  // console.log(carruselPopular);
-};
 ///crear carrusel
 const createCarousel= (carouselId, carouselItemClass, elementArray) => {
   const carruselPopular = document.getElementById(carouselId);
