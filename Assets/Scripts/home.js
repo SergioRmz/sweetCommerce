@@ -165,7 +165,7 @@ const createCarousel= (carouselId, carouselItemClass, elementArray) => {
   let count = 0;
   for (const id in elementArray) {
     const element = elementArray[id];
-
+    let banderaDeseadoImg;
     let isActive = count == 0 ? " active" : "";
     carouselItemsHTML =
       carouselItemsHTML +
@@ -180,7 +180,7 @@ const createCarousel= (carouselId, carouselItemClass, elementArray) => {
         carouselItemsHTML + `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="/Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
       banderaDeseadoImg = true;
     } else {
-      let banderaDeseadoImg = false;
+       banderaDeseadoImg = false;
       let countImg = 0;
       productosDeseadosArray.forEach((elementDeseado, index, arr) => {
         if ((elementDeseado.id == element.id) && banderaDeseadoImg == false) {
