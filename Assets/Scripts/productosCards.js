@@ -20,12 +20,12 @@ const createCard = (categoria, object ) => {
         <div class="card h-100">
         <!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->
         <div class="card-header bg-transparent">`;
-  
+        let banderaDeseadoImg;
   if (productosDeseadosArray == null || productosDeseadosArray.length == 0) {
     innerDivProductos += `<a id="${element.id}_deseado" onclick="guardar(this,2)" href="#" class="btn"><img id="${element.id}_deseadoImg" name="noDeseado" src="/Assets/images/Icons/icons8-me-gusta_no_background-48.png" alt="AgregaWishList" width="30px"/></a>`;
     banderaDeseadoImg = true;
   } else {
-    let banderaDeseadoImg = false;
+     banderaDeseadoImg = false;
     let countImg = 0;
     productosDeseadosArray.forEach((elementDeseado, index, arr) => {
       if ((elementDeseado.id == element.id) && banderaDeseadoImg == false) {
