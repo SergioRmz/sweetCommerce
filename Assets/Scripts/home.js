@@ -196,7 +196,7 @@ const createCarousel= (carouselId, carouselItemClass, elementArray) => {
       carouselItemsHTML + "</div>" +
       "<img " +
       'class="card-img-top W-100"' +
-      `src="${element.imagen_Src}"` +
+      `src=".${element.imagen_Src}"` +
       'alt="Card image cap"' +
       'width=""/>' +
       '<div class="card-body">' +
