@@ -123,10 +123,10 @@ const createListaDeseados = () => {
             `<a id="${element.id}_deseadoEliminar" onclick="eliminarDeseado(this)"  href="#" class="btn"><img class="remove-button" src="../Assets/images/Icons/icons8-eliminar-30.png" alt="boton-eliminar"></a>` +
             '</td>' +
             '<td>' +
-            `<img class="wishlist-img" src="${element.imagenSrc}" alt="">` +
+            `<img class="wishlist-img" src="${element.imagen_Src}" alt="">` +
             '</td>' +
             '<td>' +
-            `${element.nombreProducto}` +
+            `${element.nombre_Producto}` +
             '</td>' +
             '<td>' +
             `$${element.precio}` +
