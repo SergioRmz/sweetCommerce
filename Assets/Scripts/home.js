@@ -1,8 +1,3 @@
-$(function () {
-  $("#navBarSection").load("./Assets/Components/NavBar/NavBar.html");
-  $("#footer-section").load("./Assets/Components/Footer/footer.html");
-});
-
 let parsedproductosArray;
 let productosDeseadosArray;
 let productosCarritoArray;
@@ -251,33 +246,12 @@ const seleccionProductos = (jsonFromDb) => {
   
   const productoPopularesArray = [];
   const productoNuevosArray = [];
-  const dulcesArray = [];
-  const chocolatesArray = [];
-  const bebidasArray = [];
-  const snacksArray = [];
-  const cajasArray = [];
+
   for (const key in jsonFromDb) {
     if (jsonFromDb[key].popular) {
       productoPopularesArray.push(jsonFromDb[key]);
     } else if (jsonFromDb[key].nuevo) {
       productoNuevosArray.push(jsonFromDb[key]);
-    }else
-    if(jsonFromDb[key].categoria == 1){
-      dulcesArray.push(jsonFromDb[key]);
-      createCard(1,jsonFromDb[key])
-    }
-    else
-    if(jsonFromDb[key].categoria == 2){
-      chocolatesArray.push(jsonFromDb[key]);
-    }else
-    if(jsonFromDb[key].categoria == 3){
-      bebidasArray.push(jsonFromDb[key]); 
-    }else
-    if(jsonFromDb[key].categoria == 4){
-      snacksArray.push(jsonFromDb[key]);
-    }else
-    if(jsonFromDb[key].categoria == 5){
-      cajasArray.push(jsonFromDb[key]); 
     }
   }
 
