@@ -6,7 +6,7 @@ let productosCarritoArray;
 
 let productos = [];
 // Aquí se debe cambiar el URL del servicio en el BackEnd
-const URL_MAIN ='http://localhost:8080/sweetCommerce/productos/'; //URL a donde se hace la petición
+const URL_MAIN ='https://sweetcommerceback-production.up.railway.app/sweetCommerce/productos/'; //URL a donde se hace la petición
 const getData =  () => {
   //div_Productos es el div donde se va a agregar los productos
   fetch(URL_MAIN, {
