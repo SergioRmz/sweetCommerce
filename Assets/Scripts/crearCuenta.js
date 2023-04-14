@@ -1,7 +1,4 @@
-$(function(){
-    $("#navBarSection").load("/Assets/Components/NavBar/NavBar.html");
-    $("#includeHtml").load("/Assets/Components/HomeComponets/categoriasPopularesHome.html");
-});
+
 
 //Se obtiene la referencia al elemento del boton de inicio de sesion y lo almacena en botonIS
 let botonCC = document.getElementById('crearCuentaId');
@@ -18,6 +15,6 @@ botonCC.addEventListener('click', () => {
   localStorage.setItem('apellido', apellido);
   localStorage.setItem('email', email);
   localStorage.setItem('password', password);
-  window.open('/Pages/login.html', '_blank');
+  window.open('../login.html', '_blank');
   
 });
