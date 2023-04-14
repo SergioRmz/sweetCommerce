@@ -15,6 +15,6 @@ botonCC.addEventListener('click', () => {
   localStorage.setItem('apellido', apellido);
   localStorage.setItem('email', email);
   localStorage.setItem('password', password);
-  window.open('../login.html', '_blank');
+  window.open('login.html', '_blank');
   
 });
