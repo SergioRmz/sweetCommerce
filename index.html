@@ -43,14 +43,20 @@
                <!--  Barra de busqueda  -->
             <div class="collapse navbar-collapse" id="barraBusqueda">
               <!-- Barra de busqueda -->
-              <form id="" class="d-flex " role="search">
+              <form id="formHome" autocomplete="off" class="d-flex " role="search">
+                
               <input
+              id="inputHome"
               class="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
+              oninput="buscarProductos()"
+              data-bs-toggle="dropdown"
               />
+               <table class="dropdown-menu container-fluid" id="tags"></table> 
               <button
+              id="btnBusqueda"
               class="btn btn-outline-success bg-info-subtle border-light-subtle text-info-emphasis"
               type="submit"
               >search
@@ -172,6 +178,7 @@
       <!--Seccion 1: Carousel home anuncios -->
       <!-- Carrusel 1: ANUNCIOS/PROMOCIONES-->
       <section id="carousel" class="container-fluid">
+        <div class="container-fluid" id="productoBucado"></div>
         <div id="carouselCaptions" class="carousel slide ps-lg-4 pe-lg-4 pt-0">
           <!-- Sección de botones -->
           <div id="buttonsSection" class="carousel-indicators">
