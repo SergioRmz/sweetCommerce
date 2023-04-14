@@ -38,7 +38,7 @@ table {
 }
 
 .table-wrapper {
-  display: flex;
+  display:block ;
   align-items: end;
   justify-content: end;
   height: 60vh;
