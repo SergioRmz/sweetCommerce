@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- inserción de estilos-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Assets/Components/NavBar/NavBar.css">
+  <link rel="stylesheet" href="./Assets/Styles/productos.css">
+  <link rel="stylesheet" href="./Assets/Components/Footer/footer.css">
+  
+  
+</head>
+
+<body>
+  <header id="sectionContainer" class="container-fluid  ps-0 pe-0 pt-0">
+    <nav class="pt-0" id="header">
+      <div
+        id="navBar-partOne"
+        class="navbar navbar-expand-lg bg-body-tertiary pt-0 justify-content-between"
+      >
+        <div id="navBar-partOne-item" class="container-fluid  ">
+          <!-- LOGO vinculado a home -->
+          <a class="navbar-brand" href="./">
+            <img
+              id="sweetLogo"
+              class="img-fluid"
+              src="./Assets/images/Sweet.png"
+              alt="Logo"
+              
+            />
+          </a>
+          <div class="navbar">
+             <!--  Barra de busqueda  -->
+          <div class="collapse navbar-collapse" id="barraBusqueda">
+            <!-- Barra de busqueda -->
+            <form id="" class="d-flex " role="search">
+            <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            />
+            <button
+            class="btn btn-outline-success bg-info-subtle border-light-subtle text-info-emphasis"
+            type="submit"
+            >search
+          </button>
+        </form>
+      </div>
+          <!-- Elementos que aparecen al colapsar-->
+          <!-- Primer icono: elemento barra de busqueda -->
+          <a
+            class="btn nav-link navbar-toggler border border-0 p-0"
+            href="#barraBusqueda"
+            role="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#barraBusqueda"
+            aria-controls="barraBusqueda"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+
+            <span
+              ><img
+                id="iconSearch"
+                class="icons"
+                src="./Assets/images/Icons/icons8-busca-mas-48.png"
+                alt="Lupa"
+            /></span>
+          </a>
+      <!-- PROBANDO CAMBIOS -->
+      <a  class="nav-link  border border-0 p-0" 
+          aria-current="page" 
+          role="button"
+          href="login.html">
+        <img
+          id="userIcon"
+          class="icons"
+          src="./Assets/images/Icons/icons8-usuario-masculino-en-círculo-48.png"
+          alt="icono de usuario"
+        />
+      </a>
+
+      <a class="nav-link  border border-0 p-0" href="listaDeseos.html">
+        <img
+          id="deseadosIcon"
+          class="icons"
+          src="./Assets/images/Icons/icons8-me-gusta-48.png"
+          alt="icono de corazón"
+        />
+      </a>
+      <a class="nav-link  border border-0 p-0 " href="carrito.html">
+        <img
+          id="carritoIcon"
+          class="icons"
+          src="./Assets/images/Icons/icons8-carrito-de-la-compra-cargado-48.png"
+          alt="carrito"
+      /></a>
+          
+
+          <!-- Boton hamburguesa -->
+          <a
+            id="botonHamburguesa"
+            class="btn navbar-toggler "
+            role="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+         
+            <img class="w-100 p-0" src="./Assets/images/Icons/icons8-menú-redondeado-50.png" alt="menu" >
+                       
+      </a>
+
+          </div>
+         
+        </div>
+      </div>
+
+      <div
+        id="navBar-partTwo"
+        class="navbar navbar-expand-lg bg-body-tertiary"
+      >
+        <div id="navBar-partTwo-item" class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="dulces.html"
+                  >Dulces</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="productos.html"
+                  >Chocolate</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="bebidas.html"
+                  >Bebidas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="snacks.html"
+                  >Snacks</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="misteryBox.html"
+                  >Caja Misteriosa</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container justify-content-center ps-5">
+    <br>
+    <h2 class="h2"></h2>
+   <br><br>
+ 
+ 
+   <!--CARTAS-->
+   <div id="2" class="container justify-content-center ps-lg-5">
+     <div class="container justify-content-center ps-lg-5" id="div_ProductoBuscado">
+       
+ 
+     
+     </div>
+   </div>
+  
+ 
+   <div class="sticky-sm-bottom">
+     <img class="position-sticky bottom-50 end-100 img-fluid" translate-middle src="./Assets/images/Icons/icons8-cesta-de-la-compra-48.png" alt="" srcset="">
+   </div>
+ 
+  </main>
+  
+  <footer class="container-fluid ">
+    <div class="container-fluid row">
+      <div class="col-12 row pt-2 d-sm-flex flex-row flex-wrap align-items-center  ">
+      <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center ">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <ul>
+            <li class="my-2 listItem ">
+              <a class="twhite footer-links " href="index.html"> Sweetcommerce </a>
+            </li>
+            <li class="my-2 listItem ">
+              <a class="twhite footer-links text-nowrap" href="aboutUs.html">Acerca de nosotros</a>
+            </li>
+            <li class="my-2 listItem ">
+              <a class="twhite footer-links text-nowrap" href="crearCuenta.html">Crear cuenta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center ">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <ul>
+            <li class="my-2 listItem">
+              <a class="twhite footer-links text-nowrap" href="contacto.html">Contáctanos</a>
+            </li>
+            <li class="my-2 listItem">
+              <a class="twhite footer-links text-nowrap" href="faq.html">Preguntas frecuentes</a>
+            </li>
+            <li class="my-2 listItem">
+              <a class="twhite footer-links text-nowrap" href="termsConditions.html">Términos y condiciones</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 ">
+        <p class="twhite footer-links text-fluid">Síguenos en:</p>
+        <ul class="d-flex flex-row flex-wrap justify-content-evenly align-items-center">
+          <li>
+            <a href="https://www.facebook.com/100090979624820/professional_dashboard/insights/page/?ref=profile_action"
+              target="_blank">
+              <img class="img-footer" src="./Assets/images/Icons/icons8-facebook-nuevo-48.png" alt="Logotipo facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" target="_blank">
+              <img class="img-footer" src="./Assets/images/Icons/icons8-twitter-48.png" alt="Logotipo twitter">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img class="img-footer" src="./Assets/images/Icons/icons8-instagram-48.png" alt="Logotipo instagram">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/es/" target="_blank">
+              <img class="img-footer" src="./Assets/images/Icons/icons8-tik-tok-60.png" alt="Logotipo tiktok">
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+      <div class="col-12 col-lg-3">
+        <p class="twhite footer-links text-fluid ">Aceptamos:</p>
+        <ul class="d-flex flex-row flex-wrap justify-content-evenly align-items-center">
+          <li>
+            <a href="https://www.visa.com.mx/" target="_blank">
+              <img class="img-footer" src="./Assets/images/Icons/icons8-visa-60.png" alt="Logotipo visa">
+            </a>
+          </li>
+          <li>
+            <a href="https://bitcoin.org/es/" target="_blank">
+              <img class="img-footer" src="./Assets/images/Icons/icons8-bitcoin-48.png" alt="Logotipo bitcoin">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.paypal.com/mx/home" target="_blank">
+              <img class="img-footer" src="./Assets/images/Icons/icons8-paypal-60.png" alt="Logotipo paypal">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid col-12">
+      <p class="twhite footer-links text-fluid">2023 - sweetcommerce.com</p>
+    </div>
+    </div>
+
+  </footer>
+
+ 
+
+  <script src="./Assets/Scripts/listaDeseos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+
+    <script src="./Assets/Scripts/productoBuscado.js"></script>
+  
+</body>
+
+</html>
