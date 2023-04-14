@@ -37,7 +37,7 @@ table {
     color: white;
 }
 
-.table-wrapper {
+/* .table-wrapper {
   display:block ;
   align-items: end;
   justify-content: end;
@@ -46,7 +46,7 @@ table {
 
 .table-wrapper table {
   margin: 0 auto;
-}
+} */
 /* footer{
   position : fixed;
   bottom : 0;
