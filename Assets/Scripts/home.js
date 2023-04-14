@@ -155,7 +155,7 @@ const createCarousel= (carouselId, carouselItemClass, elementArray) => {
   // Se asigna la clase
 
   let carouselItemsHTML =
-    '<div class="carousel-inner carruselInner" id="popularesInner" role="listbox">';
+    '<div class="carousel-inner carruselInner justify-content-center"  role="listbox">';
   let count = 0;
   for (const id in elementArray) {
     const element = elementArray[id];
@@ -164,7 +164,7 @@ const createCarousel= (carouselId, carouselItemClass, elementArray) => {
     carouselItemsHTML =
       carouselItemsHTML +
       `<div class="${carouselItemClass}${isActive}">` +
-      '<div class="col-md-3"><div class="card h-100">' +
+      '<div class="col-md-3"><div class="card  h-100">' +
       "<!-- Se agrega un header a la tarjeta y se coloca icono para wishList -->" +
       '<div class="card-header bg-transparent">';
 
@@ -195,13 +195,13 @@ const createCarousel= (carouselId, carouselItemClass, elementArray) => {
     carouselItemsHTML =
       carouselItemsHTML + "</div>" +
       "<img " +
-      'class="card-img-top W-100"' +
+      'class="card-img W-100"' +
       `src=".${element.imagen_Src}"` +
       'alt="Card image cap"' +
       'width=""/>' +
       '<div class="card-body">' +
       `<h5 class="card-title">${element.nombre_Producto}</h5>` +
-      `<p class="card-text">${element.precio}</p>` +
+      `<p class="card-text">$${element.precio}</p>` +
       "</div>" +
       "<!-- Se agrega un footer a la tarjeta y se coloca icono para añadirCarrito-->" +
       '<div class="card-footer bg-transparent">' +
@@ -219,7 +219,7 @@ const createCarousel= (carouselId, carouselItemClass, elementArray) => {
   carruselPopular.innerHTML =
     carouselItemsHTML +
     '</div> <a class="carousel-control-prev bg-transparent w-aut"' +
-    'href="#popularesCarousel"' +
+    `href="#${carouselId}"` +
     'role="button"' +
     'data-bs-slide="prev">' +
     "<span " +
@@ -239,7 +239,7 @@ const createCarousel= (carouselId, carouselItemClass, elementArray) => {
     "></span>" +
     "</a>";
 
- // console.log(carruselPopular);
+  console.log(carruselPopular);
 };
 
 const seleccionProductos = (jsonFromDb) => {
@@ -268,23 +268,20 @@ const seleccionProductos = (jsonFromDb) => {
     "carousel-item populares2Item categoriaItem justify-content-center";
   createCarousel(carouselNuevosId, carouselItemNuevos, productoNuevosArray);
 
+  arranqueCarruseles();
+
 };
+
+
 
 
 getData();
 
 
-let categoriasItems = document.querySelectorAll(
-  "#categoriasCarousel .popularesCategoriaItem"
-);
-let popularesItems = document.querySelectorAll(
-  "#popularesCarousel  .popularesItem"
-);
-let populares2Items = document.querySelectorAll(
-  "#populares2Carousel  .populares2Item"
-);
+
 
 const carruselFuncion = (grupoDeElementos) => {
+
   console.log("items", grupoDeElementos);
   grupoDeElementos.forEach((el) => {
     const minPerSlide = 4;
@@ -301,9 +298,21 @@ const carruselFuncion = (grupoDeElementos) => {
     }
   });
 };
-carruselFuncion(categoriasItems);
-carruselFuncion(popularesItems);
-carruselFuncion(populares2Items);
+const arranqueCarruseles = () =>{
+  let categoriasItems = document.querySelectorAll(
+    "#categoriasCarousel .popularesCategoriaItem"
+  );
+  let popularesItems = document.querySelectorAll(
+    "#popularesCarousel  .popularesItem"
+  );
+  let populares2Items = document.querySelectorAll(
+    "#populares2Carousel  .populares2Item"
+  );
+  carruselFuncion(categoriasItems);
+ carruselFuncion(popularesItems);
+ carruselFuncion(populares2Items);
+}
+
 
 /**Se crea una funcion que recibe el objeto HTML que recibio el evento, con la intencion de recuperar el ID del producto al que pertenece,
  *  además recibirá el tipo representativo de si se guarda en el carrito o en la lista de deseados 

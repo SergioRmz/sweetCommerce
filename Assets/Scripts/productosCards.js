@@ -43,7 +43,7 @@ const createCard = (categoria, object ) => {
     banderaDeseadoImg = false;
   }
   
-  innerDivProductos += ` </div><img class="card-img-top" src=".${element.imagen_Src}" alt="Card image cap" width="">
+  innerDivProductos += ` </div><img class="card-img" src=".${element.imagen_Src}" alt="Card image cap" width="">
   <div class="card-body">
 
     <h5 class="card-title">${element.nombre_Producto}</h5>

@@ -1,3 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h3 {
+	font-family: 'Fredoka One', bold;
+	padding: 20px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+table {
+	font-family: 'Fredoka One', cursive !important;
+	font-size: 18px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin-bottom: 20px;
+	background: #fff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+ 
+  .table-wrapper:hover {
+    border: none;
+    transform: scale(1.02);
+  }
+
 .wishlist-img{
     width: 150px;
 }
@@ -11,13 +38,18 @@
     color: white;
 }
 
-.table-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70vh;
+/* footer{
+  position : fixed;
+  bottom : 0;
+} */
+
+/* .table-wrapper {
+  display:block ;
+  align-items: end;
+  justify-content: end;
+  height: 60vh;
 }
 
 .table-wrapper table {
   margin: 0 auto;
-}
+} */

@@ -1,10 +1,12 @@
-.img-fluid {
+.imgTerms {
+
 	display: flex;
 	overflow: hidden;
 	background: #fff;
 	transition: all .6s ease;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.img-fluid:hover {
+.imgTerms:hover {
 	border: none;
 	transform: scale(1.01);
+}
