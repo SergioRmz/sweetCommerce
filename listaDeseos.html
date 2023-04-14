@@ -165,10 +165,13 @@
   </header>
 
   <main class="container-fluid">
+    <div class="container">
+      <h3>Mi lista de Deseados</h3>
     <!-- Contenedor para centrar la tabla -->
-    <div class="container  align-text-center">
+    <div class="table-wrapper container align-text-center">
         <!-- Tabla con encabezados -->
-        <table class="table">
+        <div class="table-responsive">
+        <table class="table table-hover">
             <thead>
                 <tr>
                     <th>Eliminar producto</th>
@@ -183,7 +186,9 @@
               <!-- Ingresan datos de manera dinamica desde listaDeseos.js -->
             </tbody>
         </table>
+      </div>
     </div>
+  </div>
     <!-- <script async defer src="../Assets/Scripts/listaDeseos.js"></script> -->
 </main>
 <footer class="container-fluid">
