@@ -21,3 +21,7 @@
 .table-wrapper table {
   margin: 0 auto;
 }
+footer{
+  position : fixed;
+  bottom : 0;
+}
