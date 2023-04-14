@@ -32,8 +32,10 @@ const createCarrito = () => {
 };
 const mensajeListaVacia = () =>{
   const mensajeLista = document.getElementById("mensajeLista");
+  const carrito = document.getElementById("table-body");
   if(parsedproductosCarritoArray.length == 0||parsedproductosCarritoArray == null ){
       console.log("Lista vacía");
+      carrito.innerHTML = "";
       mensajeLista.innerHTML =`<a href="index.html"><div class="container-fluid"><img class="w-100" src="./Assets/images/MensajeAgregaProductos.png"/></div></a>`
 
   }else{
@@ -119,5 +121,6 @@ const eliminarDelCarrito = (objetoHTML) => {
       mensajeListaVacia();
       actualizarTotales();
     }
+    
   });
 };
