@@ -1,20 +1,30 @@
 /* Estilos generales */
 
 footer {
+    display: flex;
+    justify-content: space-evenly;
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
     font-family: 'Lexend', sans-serif;
+    background-color: #FF6FB5;
+
+}
+.listItem{
+    padding: 0;
+    margin: 0;
 }
 
 ul{
     margin-bottom: 0;
+    padding: 0;
 }
 
 ul li {
     list-style-type: none;
     text-align: center;
+
 }
 
 ul li a {
@@ -43,14 +53,10 @@ ul li a p{
     font-size: 80%;
 }
 
-
-footer{
-    background-color: #FF6FB5;
-}
-
 .img-footer{
     height: 60px;
     width: auto;
+    padding: 0;
 }
 
 .footer-links{

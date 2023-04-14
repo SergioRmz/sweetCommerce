@@ -8,9 +8,6 @@ body,main{
     border: 0;
     border-radius: 25px;
 }
-.cardCategoria{
-    /* box-shadow:  10px 10px 5px  rgba(55, 226, 212, 0.423); */
-}
 
 
 @media (max-width: 992px)  {
@@ -96,6 +93,7 @@ body,main{
 }
 
 /*************Carruseles secciones*********/
+
 @media (max-width: 767px) {
     .carruselInner .categoriaItem > div {
         display: none !important;
@@ -111,6 +109,7 @@ body,main{
 .carruselInner .carousel-item-next,
 .carruselInner .carousel-item-prev {
     display: flex !important;
+    
 
 }
 
@@ -119,13 +118,14 @@ body,main{
 
     .carruselInner .carousel-item-end.active,
     .carruselInner .carousel-item-next {
-        transform: translateX(25%) !important;
-
+        transform: translateX(20%) !important;
+        
     }
 
     .carruselInner .carousel-item-start.active, 
     .carruselInner .carousel-item-prev {
-        transform: translateX(-25%) !important;
+        transform: translateX(-20%) !important;
+
     }
 }
 
