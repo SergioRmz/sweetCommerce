@@ -30,8 +30,19 @@ const createCarrito = () => {
   }
   carrito.innerHTML = carritoHTML;
 };
+const mensajeListaVacia = () =>{
+  const mensajeLista = document.getElementById("mensajeLista");
+  if(parsedproductosCarritoArray.length == 0||parsedproductosCarritoArray == null ){
+      console.log("Lista vacía");
+      mensajeLista.innerHTML =`<a href="index.html"><div class="container-fluid"><img class="w-100" src="./Assets/images/MensajeAgregaProductos.png"/></div></a>`
 
-createCarrito();
+  }else{
+    createCarrito();
+  }
+
+}
+mensajeListaVacia();
+
 
 // Actualizar Totales
 const actualizarTotales = () => {
@@ -78,7 +89,7 @@ const agregarDelDeseadoAlCarrito = (objetoHTML) => {
       element.cantidad = 1; // Inicializar cantidad a 1
       parsedproductosCarritoArray.push(element);
       guardarCarritoEnLocalStorage(parsedproductosCarritoArray);
-      createCarrito();
+      mensajeListaVacia();
       actualizarTotales();
     }
   });
@@ -92,7 +103,7 @@ const actualizarCarrito = (objetoHTML) => {
     if (element.id == parseInt(id)) {
       element.cantidad = cantidad;
       guardarCarritoEnLocalStorage(parsedproductosCarritoArray);
-      createCarrito();
+      mensajeListaVacia();
       actualizarTotales();
     }
   });
@@ -105,7 +116,7 @@ const eliminarDelCarrito = (objetoHTML) => {
     if (element.id == parseInt(id)) {
       parsedproductosCarritoArray.splice(index, 1);
       guardarCarritoEnLocalStorage(parsedproductosCarritoArray);
-      createCarrito();
+      mensajeListaVacia();
       actualizarTotales();
     }
   });
