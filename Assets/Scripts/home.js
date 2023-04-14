@@ -95,13 +95,10 @@ const buscarProductos = () => {
       if(nombre.includes(value)){
         produtosEnBusqueda.push(element);
         tags.innerHTML +=`
-        <thead>
-                <tr></tr>
-                <tr></tr>
-                <thead>
-                <tbody>
-                    <tr><td><a class="dropdown-item" onclick="" href="#">${nombre}</a></td>
-                    <td><a class="dropdown-item" onclick="" href="#"><img class="buscado-img" src=".${imagen}"/></a></td></tr></tbody>`
+        <thead><tr></tr><tr></tr></thead><tbody>
+                    <tr><td><a class="dropdown-item" onclick="" href="#">${nombre}</a>
+                    <a class="dropdown-item" onclick="" href="#"><img class="buscado-img" src=".${imagen}"/></a></td>
+                    </tr></tbody>`
       }
       
       });

@@ -8,8 +8,15 @@ body,main{
     border: 0;
     border-radius: 25px;
 }
+#tags{
+    width: 70%;
+}
+#tags tbody{
+    width: 100%;
+}
 .buscado-img{
-    width: 10vw;
+    width: 5vw;
+    padding-right: 0;
 }
 
 @media (max-width: 992px)  {
@@ -30,6 +37,18 @@ body,main{
     }
     #headlineButton1> h2, #headlineSection1{
         font-size: 1rem;
+    }
+    #tags{
+
+        width: 90%;
+    }
+    #tags tbody{
+        width: 100%;
+
+    }
+    .buscado-img{
+        width: 10vw;
+        padding-right: 0;
     }
 
 }
