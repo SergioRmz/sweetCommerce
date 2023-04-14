@@ -19,6 +19,7 @@ table {
 	background: #fff;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
+ 
   .table-wrapper:hover {
     border: none;
     transform: scale(1.02);
@@ -37,6 +38,11 @@ table {
     color: white;
 }
 
+/* footer{
+  position : fixed;
+  bottom : 0;
+} */
+
 /* .table-wrapper {
   display:block ;
   align-items: end;
@@ -46,8 +52,4 @@ table {
 
 .table-wrapper table {
   margin: 0 auto;
-} */
-/* footer{
-  position : fixed;
-  bottom : 0;
 } */
