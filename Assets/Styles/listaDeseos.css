@@ -19,10 +19,13 @@ table {
 	background: #fff;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
- 
+ #mensajeLista{
+
+ }
   .table-wrapper:hover {
     border: none;
     transform: scale(1.02);
+    padding-bottom: 1vh;
   }
 
 .wishlist-img{
@@ -38,10 +41,9 @@ table {
     color: white;
 }
 
-/* footer{
-  position : fixed;
-  bottom : 0;
-} */
+footer{
+  padding-top: 1vh;
+} 
 
 /* .table-wrapper {
   display:block ;
