@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 h3 {
-	font-family: 'Fredoka One', bold;
+	font-family: 'Fredoka One', bold !important;
 	padding: 20px 0;
 	text-align: center;
 	text-transform: uppercase;
