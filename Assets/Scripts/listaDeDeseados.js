@@ -46,8 +46,19 @@ const createListaDeseados = () => {
     console.log(listaDeseados);
 };
 
-createListaDeseados();
+//createListaDeseados();
+const mensajeListaVacia = () =>{
+    const mensajeLista = document.getElementById("mensajeLista");
+    if(parsedproductosDeseadosArray.length == 0||parsedproductosDeseadosArray == null ){
+        console.log("Lista vacía");
+        mensajeLista.innerHTML =`<a href="index.html"><div class="container-fluid"><img class="w-100" src="./Assets/images/Misfavoritos.png"/></div></a>`
 
+    }else{
+        createListaDeseados();
+    }
+
+}
+mensajeListaVacia();
 
 
 const guardarCarrito = (objetoHTML) => {
@@ -93,6 +104,6 @@ const eliminarDeseado = (objetoHTML) => {
 
     const productosDeseadosArrayJson = JSON.stringify(parsedproductosDeseadosArray);
     localStorage.setItem("productosDeseadosArray", productosDeseadosArrayJson);
-
+    mensajeListaVacia();
     console.log(JSON.parse(localStorage.getItem("productosDeseadosArray")));
 }
